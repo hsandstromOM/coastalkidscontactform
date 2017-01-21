@@ -344,7 +344,7 @@ app.get('/ins', bodyParser.json(),function(req,res) {
 });
 
 app.get('/', function(req,res){
-  res.sendfile('www/newForm.html');
+  res.sendFile instead('www/newForm.html');
 });
 
 app.get('/insurance', function(req,res){
