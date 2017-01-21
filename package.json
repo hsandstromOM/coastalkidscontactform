@@ -1,14 +1,13 @@
 {
-  "name": "coastalkids",
+  "name": "coastalkidsform",
   "version": "1.0.0",
   "description": "## Overview",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.15.2",
+    "body-parser": "^1.16.0",
+    "bootstrap": "^3.3.7",
     "ecstatic": "^1.4.1",
-    "express": "^4.14.0",
-    "http": "0.0.0",
-    "nodemailer": "^2.5.0"
+    "nodemailer": "^2.7.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -17,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lincsIO/CoastalKids.git"
+    "url": "git+https://github.com/hsandstromOM/coastalkidscontactform.git"
   },
-  "author": "",
+  "author": "hosea@obviouslee.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lincsIO/CoastalKids/issues"
+    "url": "https://github.com/hsandstromOM/coastalkidscontactform/issues"
   },
-  "homepage": "https://github.com/lincsIO/CoastalKids#readme"
+  "homepage": "https://github.com/hsandstromOM/coastalkidscontactform#readme"
 }
