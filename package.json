@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hsandstromOM/coastalkidscontactform.git"
+    "url": "git+https://github.com/hsandstromOM/coastalkidsform.git"
   },
-  "author": "hosea@obviouslee.com",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hsandstromOM/coastalkidscontactform/issues"
+    "url": "https://github.com/hsandstromOM/coastalkidsform/issues"
   },
-  "homepage": "https://github.com/hsandstromOM/coastalkidscontactform#readme"
+  "homepage": "https://github.com/hsandstromOM/coastalkidsform#readme"
 }
