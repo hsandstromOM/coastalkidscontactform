@@ -1,4 +1,40 @@
 $(document).ready(function() {
+  function findNextChild (currentDiv) {
+    var currentIdNum = parseInt(currentDiv['id'].substr(currentDiv['id'].length - 1))
+    var nextIdNumber = currentIdNum + 1
+    var newString = "#insuranceChild" + nextIdNumber
+    $(newString).show()
+  }
+
+  function showOrHideOptions (currentDiv) {
+    var currentId = currentDiv['id']
+    var currentIdNum = parseInt(currentDiv['id'].substr(currentDiv['id'].length - 1))
+    var currentIdString = '#' + currentId
+    var insuranceType = $(currentIdString).val()
+    var currentPrivateString = '#privateInsuranceOptions' + currentIdNum
+    var currentMedicaidString = '#medicaidInsuranceOptions' + currentIdNum
+    if(insuranceType == 'selfPay'){
+      $(currentPrivateString).hide()
+      $(currentMedicaidString).hide()
+    } else if (insuranceType == 'private') {
+      $(currentPrivateString).show()
+      $(currentMedicaidString).hide()
+    } else if (insuranceType == 'medicaid') {
+      $(currentPrivateString).hide()
+      $(currentMedicaidString).show()
+    }
+  }
+
+  $( ".addChild" ).click(function() {
+    var currentDiv = this
+    findNextChild(currentDiv)
+  });
+
+  $('.insuranceDropDown').change(function(){
+    var currentDiv = this
+    showOrHideOptions(currentDiv)
+  });
+});
   $('#contact_form').bootstrapValidator({
       // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
       feedbackIcons: {

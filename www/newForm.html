@@ -227,6 +227,7 @@ function googleTranslateElementInit() {
 
 <div class="form-group">
   <label class="col-md-6" style="margin-left: 10px">I am the Legal Guardian for the children named below:</label></div>
+  <div id="insuranceChild0">
   <div class="form-group">
     <label class="col-md-6" style="margin-left: 10px">Child's Name:</label></div>
     <div class="form-group">
@@ -256,7 +257,7 @@ function googleTranslateElementInit() {
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
         <select name="insurance" class="form-control selectpicker" >
-          <option value=" " >Select type of insurance for the child above</option>
+          <option value=" " >Select insurance for the child above</option>
           <option>Self Pay</option>
           <option>Private Insurance</option>
           <option >Medicaid</option>
@@ -267,7 +268,9 @@ function googleTranslateElementInit() {
     </div>
   <!-- </div> -->
   </div>
+  <div id="addAnotherChild0" class="col-md-12 addChild"></div>
 
+<div id="insuranceChild1">
   <div class="form-group">
     <div class="name-row">
   <div class="col-md-4 inputGroupContainer">
@@ -295,7 +298,7 @@ function googleTranslateElementInit() {
       <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
       <select name="insurance" class="form-control selectpicker" >
-        <option value=" " >Select type of insurance for the child above</option>
+        <option value=" " >Select insurance for the child above</option>
         <option>Self Pay</option>
         <option>Private Insurance</option>
         <option >Medicaid</option>
@@ -303,9 +306,51 @@ function googleTranslateElementInit() {
       </select>
     </div>
     </div>
+    <div class="col-md-12" style="height:20px"></div>
+    <div id="addAnotherChild1" class="col-md-12 addChild">+ Add Another Child</div></div>
   </div>
-<!-- </div> -->
-</div>
+
+
+  <!-- <div id="insuranceChild2">
+  <div class="form-group">
+    <label class="col-md-6" style="margin-left: 10px">Child's Name:</label></div>
+    <div class="form-group">
+      <div class="name-row">
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input  name="first_name" placeholder="First" class="form-control"  type="text">
+        </div>
+      </div>
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input name="last_name" placeholder="Last" class="form-control"  type="text">
+        </div>
+      </div>
+      <div class="col-md-3 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+      <input name="dob" placeholder="MM/DD/YYYY" class="form-control"  type="text">
+      </div>
+      </div>
+    </div>
+      <div class="name-row">
+        <div class="col-md-4 selectContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+        <select name="insurance" class="form-control selectpicker" >
+          <option value=" " >Select insurance for the child above</option>
+          <option>Self Pay</option>
+          <option>Private Insurance</option>
+          <option >Medicaid</option>
+          <option >Other</option>
+        </select>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div id="addAnotherChild2" class="col-md-12 addChild"></div> -->
 
 <div class="form-group">
   <label class="col-md-6" style="margin-left: 10px">Please list anyone who you give permission to bring your child to their appointment:</label>
@@ -327,7 +372,7 @@ function googleTranslateElementInit() {
   </div>
 </div>
 <div class="form-group">
-  <label class="col-md-6" style="margin-left: 10px">I give this individual permission to receive information and the rights to sign for medical history, consents routine dental treatment link:</label>
+  <label  class="col-md-6" style="margin-left: 10px">I give this individual permission to receive information and the rights to sign for medical history, consents routine dental treatment link:</label>
 </div>
    <div class="form-group">
        <div class="name-row">
@@ -349,33 +394,90 @@ function googleTranslateElementInit() {
                  </div>
                </div>
              </div>
+             <div class="col-md-12" style="height:20px"></div>
+             <div id="addAnotherChild1" class="col-md-12 addChild">+ Add Another</div>
          </div>
        </div>
-
-
-                       <!-- <div class="col-md-2">
-                           <div class="name-row">
-                             <div class="input-group">
-                           <div class="radio">
-                               <label>
-                                   <input type="radio" name="permission" value="yes" /> Yes
-                               </label>
-                             </div>
-                           </div>
-                           </div>
-                           </div>
-                              <div class="col-md-2">
-                                 <div class="name-row">
-                                   <div class="input-group">
-                           <div class="radio">
-                               <label>
-                                   <input type="radio" name="permission" value="no" /> No
-                               </label>
-                           </div>
-                         </div>
-                       </div>
-                     </div>
-                   </div> -->
+       <div class="form-group">
+         <label class="col-md-6" style="margin-left: 10px">Please read each statement and signify approval by checking the box beside it:</label></div>
+          <div class="form-group">
+              <div class="name-row">
+                <div class="col-md-12 inputGroupContainer">
+                  <div class="input-group">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="cert1" value="yes" />&nbsp  I am certifying that the information listed is complete and accurate
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                  <div class="name-row">
+                    <div class="col-md-12 inputGroupContainer">
+                      <div class="input-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="cert2" value="yes" />&nbsp  I am the legal guardian of the children identified above
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="name-row">
+                        <div class="col-md-12 inputGroupContainer">
+                          <div class="input-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="cert3" value="yes" />&nbsp  I give the Coastal Kids Dental & Braces permission to take photos of my child for medical records
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="name-row">
+                            <div class="col-md-12 inputGroupContainer">
+                              <div class="input-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="cert4" value="yes" />&nbsp  I have read and understand the Privacy Act Document
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                              <div class="name-row">
+                                <div class="col-md-12 inputGroupContainer">
+                                  <div class="input-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="cert5" value="yes" />&nbsp  I have read and understand Coastal Kids Dental & Braces Office Polices
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="name-row">
+                                    <div class="col-md-12 inputGroupContainer">
+                                      <div class="input-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="cert6" value="yes" />&nbsp I will be responsible for any fees not covered by my insurance. How insurance works
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
 
 <!-- Text input-->
 <!-- <div class="form-group">
@@ -422,20 +524,22 @@ function googleTranslateElementInit() {
 </div>
   <div class="form-group">
     <div class="name-row">
-  <div class="col-md-5 inputGroupContainer">
+        <div class="col-md-6 inputGroupContainer">Name of Legal Guardian:
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First" class="form-control"  type="text">
+  <input  name="full_name" placeholder="Full Name" class="form-control"  type="text">
       </div>
     </div>
-    <div class="col-md-5 inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last" class="form-control"  type="text">
+        <div class="col-md-2 inputGroupContainer">Date:
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+  <input  name="date" placeholder="Date" class="form-control"  type="text">
       </div>
     </div>
   </div>
 </div>
+
+
 
 <!-- Success message -->
 <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
