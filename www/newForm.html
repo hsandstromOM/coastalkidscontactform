@@ -211,9 +211,10 @@ function googleTranslateElementInit() {
   </div>
 </div>
 
-<!-- Children input-->
+<!-- Child 1-->
 <div class="form-group">
-  <label class="col-md-6" style="margin-left: 10px">Email Adress:</label></div>
+  <label class="col-md-6" style="margin-left: 10px">Email Adress:</label>
+</div>
   <div class="form-group">
     <label class="col-md-6" style="margin-left: 10px; font-weight:normal;">Required for confirmations and kept confidential.</label>
   <div class="contact-row">
@@ -227,28 +228,30 @@ function googleTranslateElementInit() {
 </div>
 
 <div class="form-group">
-  <label class="col-md-6" style="margin-left: 10px">I am the Legal Guardian for the children named below:</label></div>
-  <div id="insuranceChild0">
+  <label class="col-md-6" style="margin-left: 10px">I am the Legal Guardian for the children named below:</label>
+</div>
+  <!-- <div id="insuranceChild0"></div> -->
   <div class="form-group">
-    <label class="col-md-6" style="margin-left: 10px">Child's Name:</label></div>
+    <label class="col-md-6" style="margin-left: 10px">Child's Name:</label>
+  </div>
     <div class="form-group">
       <div class="name-row">
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input  name="first_name" placeholder="First" class="form-control"  type="text">
+    <input placeholder="First" class="form-control"  type="text" name="" id="childName1" required>
         </div>
       </div>
       <div class="col-md-4 inputGroupContainer">
       <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input name="last_name" placeholder="Last" class="form-control"  type="text">
+    <input name="" id="childLast1" placeholder="Last" class="form-control"  type="text" required>
         </div>
       </div>
       <div class="col-md-3 inputGroupContainer">
       <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-      <input name="dob" placeholder="MM/DD/YYYY" class="form-control"  type="text">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+      <input name="" id="childDOB1" placeholder="MM/DD/YYYY" class="form-control"  type="text">
       </div>
       </div>
     </div>
@@ -257,59 +260,134 @@ function googleTranslateElementInit() {
         <div class="col-md-6 selectContainer">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-        <select name="insurance" class="form-control selectpicker" >
-          <option value=" " >Select insurance for the child above</option>
-          <option>Self Pay</option>
-          <option>Private Insurance</option>
-          <option >Medicaid</option>
-          <option >Other</option>
+        <select id="insChoose" class="form-control selectpicker" name="">
+          <option value="" >Select insurance for the child above</option>
+          <option value="1">Self Pay</option>
+          <option value="2">Private Insurance</option>
+          <option value="3" >Medicaid</option>
         </select>
       </div>
       </div>
     </div>
-  <!-- </div> -->
-  </div>
-  <div id="addAnotherChild0" class="col-md-12 addChild"></div>
-
-<div id="insuranceChild1">
-  <div class="form-group">
-    <div class="name-row">
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First" class="form-control"  type="text">
+      <div class="name-row">
+        <div class="col-md-12 inputGroupContainer">
+          <div id="insForm" class="hide">
+            <div class="col-md-12" style="height: 20px; width: 100%"></div>
+              <label style="margin-top: 10px;">Commercial/Private Insurance</label>
+                <div style="" class="inputLabs">Subscriber Name:</div>
+                  <input class="inputTxt"type="text" name="subscriberName" id="subscriberName1" placeholder="SUBSCRIBER NAME">
+                    <div style="" class="inputLabs">Subscriber DOB:</div>
+                      <input class="inputTxt"type="text" name="subscriberDOB" id="subscriberDOB1" placeholder="SUBSCRIBER DOB">
+                        <div style="" class="inputLabs">Subscriber ID#/SS#</div>
+                          <input class="inputTxt"type="text" name="subscriberID" id="subscriberID1" placeholder="SUBSCRIBER ID#/SS#">
+                        <div style="" class="inputLabs">Employer</div>
+                      <input class="inputTxt"type="text" name="employer" id="employer1" placeholder="EMPLOYER">
+                    <div style="" class="inputLabs">Insurance Company Name</div>
+                  <input class="inputTxt"type="text" name="insurComp" id="insurComp1" placeholder="INSURANCE COMPANY NAME">
+                <div class="col-md-12" style="height: 20px; width: 100%"></div>
+              </div>
+            <div id="medicaidForm" class="hide">
+              <label style="margin-top: 10px;">Medicaid</label>
+                  <!-- <div style="" class="inputLabs">Child's Name</div>
+                  <input class="inputTxt"type="text" name="childsName" id="childsName" placeholder="CHILD'S Name"> -->
+                <div style="" class="inputLabs">DOB on Card:</div>
+                  <input class="inputTxt"type="text" name="DOBcard" id="DOBcard1" placeholder="DOB ON CARD">
+                    <div style="" class="inputLabs">Medicaid ID</div>
+                      <input class="inputTxt"type="text" name="medicaiID" id="medicaidID1" placeholder="MEDICAID ID#">
+                    </div>
+        </div>
       </div>
-    </div>
+  </div>
+<!-- Child 2-->
+<div id="childAdditionNew" display:"none">
+  <div class="form-group">
+    <label class="col-md-6" style="margin-left: 10px">Child's Name:</label>
+  </div>
+    <div class="form-group">
+      <div class="name-row">
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last" class="form-control"  type="text">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input placeholder="First" class="form-control"  type="text" name="" id="childName2" required>
+        </div>
+      </div>
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input name="" id="childLast2" placeholder="Last" class="form-control"  type="text" required>
+        </div>
+      </div>
+      <div class="col-md-3 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+      <input name="" id="childDOB2" placeholder="MM/DD/YYYY" class="form-control"  type="text">
+      </div>
       </div>
     </div>
-    <div class="col-md-3 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-    <input name="dob" placeholder="MM/DD/YYYY" class="form-control"  type="text">
-    </div>
+    <!-- <div class="form-group"> -->
+          <!-- <input id="insuranceNew2" style="" class="" type="checkbox" name=""> -->
+            <!-- <div style="display: inline-block; font-size: 20px;">Insurance Type (required)</div> -->
+              <div class="name-row">
+                <div id="sameInsurance" class="col-md-6 selectContainer">
+                  <div class="input-group">
+                  <select id="insSame3" name="" class="form-control selectpicker">
+                   <option value=""> Select Insurance</option>
+                     <option value="1">This child has same insurance as child above.</option>
+                     <option value="2">This child has a different insurance from the child above.</option>
+                  </select>
+                </div>
+                </div>
+              </div>
+        <!-- <div id="sameInsuranc" class="hide"> -->
+        <div class="name-row">
+          <div class="col-md-6 selectContainer">
+          <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+      <select id="insChoose3" class="form-control selectpicker hide" name="">
+         <option value="">Select type of insurance for the child above</option>
+           <option value="1">Self Pay</option>
+             <option value="2">Private Insurance</option>
+            <option value="3">Medicaid</option>
+        </select>
+      </div>
     </div>
   </div>
-  <!-- <div class="form-group"> -->
-    <div class="name-row">
-      <div class="col-md-6 selectContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-      <select name="insurance" class="form-control selectpicker" >
-        <option value=" " >Select insurance for the child above</option>
-        <option>Self Pay</option>
-        <option>Private Insurance</option>
-        <option >Medicaid</option>
-        <option >Other</option>
-      </select>
-    </div>
-    </div>
-    <div class="col-md-12" style="height:20px"></div>
-    <div id="addAnotherChild1" class="col-md-12 addChild">+ Add Another Child</div></div>
+      <!--   </div> -->
+    <div id="insForm4" class="name-row hide">
+      <div class="col-md-12 inputGroupContainer">
+        <div class="input-group">
+        <label style="margin-top: 10px;">Commercial/Private Insurance</label>
+          <div style="" class="inputLabs">Subscriber Name:</div>
+            <input class="inputTxt"type="text" name="subscriberName2" id="subscriberName2" placeholder="SUBSCRIBER NAME">
+              <div style="" class="inputLabs">Subscriber DOB:</div>
+                <input class="inputTxt"type="text" name="subscriberDOB2" id="subscriberDOB2" placeholder="SUBSCRIBER DOB">
+                  <div style="" class="inputLabs">Subscriber ID#/SS#</div>
+                    <input class="inputTxt"type="text" name="subscriberID2" id="subscriberID2" placeholder="SUBSCRIBER ID#/SS#">
+                  <div style="" class="inputLabs">Employer</div>
+                <input class="inputTxt"type="text" name="employer2" id="employer2" placeholder="EMPLOYER">
+              <div style="" class="inputLabs">Insurance Company Name</div>
+            <input class="inputTxt"type="text" name="insurComp2" id="insurComp2" placeholder="INSURANCE COMPANY NAME">
+          <div class="col-md-12" style="height: 20px; width: 100%"></div>
+        </div>
+      </div>
+      </div>
+    <div id="medicaidForm4" class="name-row hide">
+        <div class="col-md-12 inputGroupContainer">
+          <div class="input-group">
+      <label style="margin-top: 10px;">Medicaid</label>
+        <div style="" class="inputLabs">DOB on Card:</div>
+          <input class="inputTxt"type="text" name="DOBcard2" id="DOBcard2" placeholder="DOB ON CARD">
+            <div style="" class="inputLabs">Medicaid ID</div>
+              <input class="inputTxt"type="text" name="medicaiID2" id="medicaidID2" placeholder="MEDICAID ID#">
+            </div>
+          </div>
+          </div>
   </div>
+  </div>
+  <div id="addAnotherChild1" class="col-md-12 addChild"></div>
+
+
+
 
 
   <!-- <div id="insuranceChild2">
