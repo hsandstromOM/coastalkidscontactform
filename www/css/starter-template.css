@@ -10,7 +10,9 @@ height: 3215px; */
     /* text-align: center; */
     border: 21px solid rgb(255, 255, 255);
     background-color: #b0d6e1;
-    height: 15000px;
+    /*height: 15000px;*/
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 #patientForm {
     font-family: Gotham;
