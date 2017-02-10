@@ -67,12 +67,12 @@ height: 3215px; */
 #insChoose, #insChoose3, #insSame3, #sameInsurance4, #insSame4, #insChoose5, #insSame5, #insSame10, #insChoose10, #inSame11, #insChoose11, #insChoose12, #insSame12, #insChoose13, #insSame14, #insSame15, #insChoose15, #insSame16, #insChoose16 {
     font-size: 100%;
 }
-.addChild {
+/*.addChild {
     text-decoration: underline;
     color: rgb(19, 81, 159);
-}
+}*/
 .addChild:hover {
-    color: #000;
+    color: #fff;
     cursor: pointer;
 }
 
