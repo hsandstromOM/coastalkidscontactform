@@ -6,6 +6,7 @@ $(document).ready(function() {
     $(newString).show()
   }
 
+
   function showOrHideOptions (currentDiv) {
     var currentId = currentDiv['id']
     var currentIdNum = parseInt(currentDiv['id'].substr(currentDiv['id'].length - 1))
@@ -30,7 +31,7 @@ $(document).ready(function() {
     findNextChild(currentDiv)
   });
 
-  $('.insuranceDropDown').change(function(){
+  $('.insuranceDropDown').select(function(){
     var currentDiv = this
     showOrHideOptions(currentDiv)
   });
