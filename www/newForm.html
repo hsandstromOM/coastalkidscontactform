@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,103 +22,108 @@
 
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
-  </head>
+</head>
 
-  <body>
-<div class="container">
+<body>
+    <div class="container">
 
-    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
-<fieldset>
+        <form class="well form-horizontal" action=" " method="post" id="contact_form">
+            <fieldset>
 
-  <div id="google_translate_element" style=""></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <div id="google_translate_element" style=""></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'en',
+                            layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
+                        }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<!-- Form Name & Logo -->
+                <!-- Form Name & Logo -->
 
-<div class="background">
-  <div class="form-group">
-    <div class="imageContainer">
-      <a href="http://coastalkidsdental.com/" >
-      <img class="logo" style=""src="images/logo.png">
-    </a>
-    </div>
-          <div style="color: rgb(19, 81, 159)" class="col-md-6">
-      <h1 style="font-family: DinskiCasual; margin: 10px">PERSONAL INTAKE FORM</h1>
-      </div>
-    </div>
+                <div class="background">
+                    <div class="form-group">
+                        <div class="imageContainer">
+                            <a href="http://coastalkidsdental.com/">
+                                <img class="logo" style="" src="images/logo.png">
+                            </a>
+                        </div>
+                        <div style="color: rgb(19, 81, 159)" class="col-md-6">
+                            <h1 style="font-family: DinskiCasual; margin: 10px">PERSONAL INTAKE FORM</h1>
+                        </div>
+                    </div>
 
-<!-- Guardian input-->
-<div class="form-group">
-  <label class="col-md-6" style="margin-left: 10px">Names of Legal Guardians:</label>
-</div>
-  <div class="form-group">
-    <div class="name-row">
-  <div class="col-md-5 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First" class="form-control"  type="text" required>
-      </div>
-    </div>
-    <div class="col-md-5 inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last" class="form-control"  type="text" required>
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="form-group">
-    <div class="name-row">
-  <div class="col-md-5 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First" class="form-control"  type="text" required>
-      </div>
-    </div>
-    <div class="col-md-5 inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last" class="form-control"  type="text" required>
-      </div>
-    </div>
-  </div>
-</div>
+                    <!-- Guardian input-->
+                    <div class="form-group">
+                        <label class="col-md-6" style="margin-left: 10px">Names of Legal Guardians:</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="first_name" placeholder="First" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="last_name" placeholder="Last" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="first_name" placeholder="First" class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="last_name" placeholder="Last" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-<!-- Address input-->
+                    <!-- Address input-->
 
-<div class="form-group">
-  <label class="col-md-6" style="margin-left: 10px">Mailing Address:</label>
-  <div class="contact-row">
-    <div class="col-md-10 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="address" placeholder="Address" class="form-control" type="text" required>
-</div>
-    </div>
-  </div>
-</div>
+                    <div class="form-group">
+                        <label class="col-md-6" style="margin-left: 10px">Mailing Address:</label>
+                        <div class="contact-row">
+                            <div class="col-md-10 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <input name="address" placeholder="Address" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- City input-->
+                    <!-- City input-->
 
-<div class="form-group">
-  <div class="contact-row">
-    <div class="col-md-5 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="city" placeholder="City" class="form-control"  type="text" required>
-    </div>
-  </div>
+                    <div class="form-group">
+                        <div class="contact-row">
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <input name="city" placeholder="City" class="form-control" type="text" required>
+                                </div>
+                            </div>
 
-  <!-- Select State-->
+                            <!-- Select State-->
 
-    <div class="col-md-2 selectContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="state" class="form-control selectpicker" required>
+                            <div class="col-md-2 selectContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select name="state" class="form-control selectpicker" required>
       <option value=" " >State</option>
       <option>Alabama</option>
       <option>Alaska</option>
@@ -171,477 +177,555 @@ function googleTranslateElementInit() {
       <option>Wisconsin</option>
       <option >Wyoming</option>
     </select>
-  </div>
-</div>
+                                </div>
+                            </div>
 
-<!-- Zip Code input-->
+                            <!-- Zip Code input-->
 
-<div class="col-md-3 inputGroupContainer">
-<div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-<input name="zip" placeholder="Zip Code" class="form-control"  type="text" required>
-</div>
-</div>
-</div>
-</div>
+                            <div class="col-md-3 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                    <input name="zip" placeholder="Zip Code" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Phone input-->
-<div class="form-group">
-<label class="col-md-6" style="margin-left: 10px">Mobile Phone Number:</label></div>
-<div class="form-group">
-  <label class="col-md-6" style="margin-left: 10px; font-weight: normal;">Required for further electronic communications.</label></div>
-<div class="form-group">
-  <div class="contact-row">
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="phone" placeholder="(843)XXX-XXXX" class="form-control" type="text" required>
-</div>
-    </div>
-  </div>
-</div>
-<div class="form-group">
-<label class="col-md-6" style="margin-left: 10px">Other Phone Number:</label></div>
-<div class="form-group">
-  <div class="contact-row">
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="phone" placeholder="(843)XXX-XXXX" class="form-control" type="text">
-</div>
-    </div>
-  </div>
-</div>
+                    <!-- Phone input-->
+                    <div class="form-group">
+                        <label class="col-md-6" style="margin-left: 10px">Mobile Phone Number:</label></div>
+                    <div class="form-group">
+                        <label class="col-md-6" style="margin-left: 10px; font-weight: normal;">Required for further electronic communications.</label></div>
+                    <div class="form-group">
+                        <div class="contact-row">
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                    <input name="phone" placeholder="(843)XXX-XXXX" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-6" style="margin-left: 10px">Other Phone Number:</label></div>
+                    <div class="form-group">
+                        <div class="contact-row">
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                    <input name="phone" placeholder="(843)XXX-XXXX" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-<div class="form-group">
-  <label class="col-md-6" style="margin-left: 10px">Email Adress:</label>
-</div>
-  <div class="form-group">
-    <label class="col-md-6" style="margin-left: 10px; font-weight:normal;">Required for confirmations and kept confidential.</label>
-  <div class="contact-row">
-    <div class="col-md-6 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="Email" class="form-control"  type="text" required>
-    </div>
-  </div>
-</div>
-</div>
-<hr>
+                    <div class="form-group">
+                        <label class="col-md-6" style="margin-left: 10px">Email Adress:</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-6" style="margin-left: 10px; font-weight:normal;">Required for confirmations and kept confidential.</label>
+                        <div class="contact-row">
+                            <div class="col-md-6 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                    <input name="email" placeholder="Email" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
 
-<div class="form-group">
-  <label class="col-md-6" style="margin-left: 10px">I am the Legal Guardian for the children named below:</label>
-</div>
-  <!-- <div id="insuranceChild0"></div> -->
-  <div class="form-group">
-    <label class="col-md-6" style="margin-left: 10px">Child's Name:</label>
-  </div>
-    <div class="form-group">
-      <div class="name-row">
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input placeholder="First" class="form-control"  type="text" name="" id="childName1" required>
-        </div>
-      </div>
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input name="" id="childLast1" placeholder="Last" class="form-control"  type="text" required>
-        </div>
-      </div>
-      <div class="col-md-3 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-      <input name="datepicker" id="childDOB1" placeholder="MM/DD/YYYY" class="form-control"  type="text" required>
-      </div>
-      </div>
-    </div>
-    <!-- INSURANCE -->
-      <div class="name-row">
-        <div class="col-md-6 selectContainer">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-        <select id="insChoose" class="form-control selectpicker" name="" required>
+                    <div class="form-group">
+                        <label class="col-md-6" style="margin-left: 10px">I am the Legal Guardian for the children named below:</label>
+                    </div>
+                    <!-- <div id="insuranceChild0"></div> -->
+                    <div class="form-group">
+                        <label class="col-md-6" style="margin-left: 10px">Child's Name:</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input placeholder="First" class="form-control" type="text" name="" id="childName1" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="" id="childLast1" placeholder="Last" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-md-3 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
+                                    <input name="datepicker" id="childDOB1" placeholder="MM/DD/YYYY" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- INSURANCE -->
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-6 selectContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select id="insChoose" class="form-control selectpicker" name="" required>
           <option value="" >Select insurance for the child above</option>
-          <option value="1">Self Pay</option>
+          <option value="1">Self Pay (We provide our patients with no dental insurance with a 5% discount)</option>
           <option value="2">Private Insurance</option>
           <option value="3" >Medicaid</option>
         </select>
-      </div>
-      </div>
-    </div>
-      <div class="name-row">
-        <!-- <div class="col-md-12 inputGroupContainer"> -->
-          <div id="insForm" class="hide">
-              <div class="col-md-12 inputGroupContainer">
-              <label style="margin-top: 10px;">Commercial/Private Insurance</label>
-            <div class="col-md-12" style="width: 100%"></div>
-                <div class="col-md-6 inputGroupContainer">
-                <div style="" class="inputLabs">Subscriber Name:</div>
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                  <input class="form-control" type="text" name="subscriberName" id="subscriberName1" placeholder="Subscriber Name">
-                </div>
-              </div>
-                <div class="col-md-3 inputGroupContainer">
-                    <div style="" class="inputLabs">Subscriber DOB:</div>
-                    <div class="input-group">
-                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                      <input class="form-control"type="text" name="subscriberDOB" id="subscriberDOB1" placeholder="MM/DD/YYYY">
-                    </div>
-                  </div>
-                    <div class="col-md-3 inputGroupContainer">
-                        <div style="" class="inputLabs">Subscriber ID#/SS#</div>
-                        <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                        <input class="form-control"type="text" name="subscriberID" id="subscriberID1" placeholder="Subscriber ID#/SS#">
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-6 inputGroupContainer">
-                        <div style="" class="inputLabs">Employer</div>
-                        <div class="input-group">
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                          <input class="form-control"type="text" name="employer" id="employer1" placeholder="Employer">
                     </div>
-                  </div>
-                  <div class="col-md-6 inputGroupContainer">
-                    <div style="" class="inputLabs">Insurance Company Name</div>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                        <input class="form-control"type="text" name="insurComp" id="insurComp1" placeholder="Insurance Company Name">
-                </div>
-              </div>
-            </div>
-                <div class="col-md-12" style="height: 20px; width: 100%"></div>
-              </div>
-            <div id="medicaidForm" class="hide">
-                <div class="col-md-6 inputGroupContainer">
-              <label style="margin-top: 10px;">Medicaid</label>
-                  <!-- <div style="" class="inputLabs">Child's Name</div>
+                    <!-- <div class <div class="name-row"> -->
+                        <!-- <div class="col-md-12 inputGroupContainer"> -->
+                        <div id="insForm" class="hide">
+                            <div class="col-md-12 inputGroupContainer">
+                                <label style="margin-top: 10px;">Commercial/Private Insurance</label>
+                                <div class="col-md-12" style="width: 100%"></div>
+                                <div class="col-md-6 inputGroupContainer">
+                                    <div style="" class="inputLabs">Subscriber Name:</div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input class="form-control" type="text" name="subscriberName" id="subscriberName1" placeholder="Subscriber Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 inputGroupContainer">
+                                    <div style="" class="inputLabs">Subscriber DOB:</div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
+                                        <input class="form-control" type="text" name="subscriberDOB" id="subscriberDOB1" placeholder="MM/DD/YYYY">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 inputGroupContainer">
+                                    <div style="" class="inputLabs">Subscriber ID#/SS#</div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                        <input class="form-control" type="text" name="subscriberID" id="subscriberID1" placeholder="Subscriber ID#/SS#">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 inputGroupContainer">
+                                    <div style="" class="inputLabs">Employer</div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                                        <input class="form-control" type="text" name="employer" id="employer1" placeholder="Employer">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 inputGroupContainer">
+                                    <div style="" class="inputLabs">Insurance Company Name</div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                        <input class="form-control" type="text" name="insurComp" id="insurComp1" placeholder="Insurance Company Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12" style="height: 20px; width: 100%"></div>
+                        </div>
+                        <div id="medicaidForm" class="hide">
+                            <div class="col-md-6 inputGroupContainer">
+                                <label style="margin-top: 10px;">Medicaid</label>
+                                <!-- <div style="" class="inputLabs">Child's Name</div>
                   <input class="inputTxt"type="text" name="childsName" id="childsName" placeholder="CHILD'S Name"> -->
-                <!-- <div style="" class="inputLabs">DOB on Card:</div>
+                                <!-- <div style="" class="inputLabs">DOB on Card:</div>
                   <input class="inputTxt"type="text" name="DOBcard" id="DOBcard1" placeholder="DOB ON CARD"> -->
-                    <!-- <div style="" class="inputLabs">Medicaid ID</div> -->
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                      <input class="form-control"type="text" name="medicaiID" id="medicaidID1" placeholder="Medicaid ID#">
-                    </div>
-                    </div>
-                  </div>
-        <!-- </div> -->
-      </div>
-  </div>
-<!-- Child 2-->
-<div id="childAdditionNew" display:"none">
-  <div class="form-group">
-    <label class="col-md-6" style="margin-left: 10px">Child's Name:</label>
-  </div>
-    <div class="form-group">
-      <div class="name-row">
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input placeholder="First" class="form-control"  type="text" name="" id="childName2" required>
-        </div>
-      </div>
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input name="" id="childLast2" placeholder="Last" class="form-control"  type="text" required>
-        </div>
-      </div>
-      <div class="col-md-3 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-      <input name="" id="childDOB2" placeholder="MM/DD/YYYY" class="form-control"  type="text" required>
-      </div>
-      </div>
-    </div>
-    <!-- <div class="form-group"> -->
-          <!-- <input id="insuranceNew2" style="" class="" type="checkbox" name=""> -->
-            <!-- <div style="display: inline-block; font-size: 20px;">Insurance Type (required)</div> -->
+                                <!-- <div style="" class="inputLabs">Medicaid ID</div> -->
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                    <input class="form-control" type="text" name="medicaiID" id="medicaidID1" placeholder="Medicaid ID#">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="height: 20px; width: 100%"></div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- Child 2-->
+                    <!-- <div id="childAdditionNew" display: "none"> -->
+                        <div class="form-group">
+                            <label class="col-md-6" style="margin-left: 10px">Child's Name:</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="name-row">
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input placeholder="First" class="form-control" type="text" name="" id="childName2" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="" id="childLast2" placeholder="Last" class="form-control" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
+                                        <input name="" id="childDOB2" placeholder="MM/DD/YYYY" class="form-control" type="text" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="form-group"> -->
+                            <!-- <input id="insuranceNew2" style="" class="" type="checkbox" name=""> -->
+                            <!-- <div style="display: inline-block; font-size: 20px;">Insurance Type (required)</div> -->
 
-              <div class="name-row">
-                <div id="sameInsurance" class="col-md-6 selectContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                  <select id="insSame3" name="" class="form-control selectpicker">
+                            <div class="name-row">
+                                <div id="sameInsurance" class="col-md-6 selectContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                        <select id="insSame3" name="" class="form-control selectpicker">
                    <option value=""> Select Insurance for the child above</option>
                      <option value="1">This child has same insurance as child above.</option>
                      <option value="2">This child has a different insurance from the child above.</option>
                   </select>
-                </div>
-                </div>
-              </div>
-        <!-- <div id="sameInsuranc" class="hide"> -->
-        <div class="name-row">
-          <div class="col-md-12 selectContainer">
-          <div class="input-group">
-            <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span> -->
-            <select id="insChoose3" class="form-control selectpicker hide" name="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div id="sameInsuranc" class="hide"> -->
+                            <div class="name-row">
+                                <div class="col-md-12 selectContainer">
+                                    <div class="input-group">
+                                        <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span> -->
+                                        <select id="insChoose3" class="form-control selectpicker hide" name="">
                 <option value="">Select type of insurance</option>
-                  <option value="1">Self Pay</option>
+                  <option value="1">Self Pay (We provide our patients with no dental insurance with a 5% discount)</option>
                   <option value="2">Private Insurance</option>
                   <option value="3">Medicaid</option>
                 </select>
-              </div>
-            </div>
-  <!-- </div> -->
-      <!--   </div> -->
-    <div id="insForm4" class="name-row col-md-12 hide">
-      <div class="col-md-12 inputGroupContainer">
-        <!-- <div class="input-group"> -->
-        <label style="margin-top: 10px;">Commercial/Private Insurance</label></div>
-          <div class="col-md-6 inputGroupContainer">
-          <div style="" class="inputLabs">Subscriber Name:</div>
-          <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input class="form-control"type="text" name="subscriberName2" id="subscriberName2" placeholder="Subscriber Name">
-          </div>
-        </div>
-          <div class="col-md-3 inputGroupContainer">
-              <div style="" class="inputLabs">Subscriber DOB:</div>
-              <div class="input-group">
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                <input class="form-control"type="text" name="subscriberDOB2" id="subscriberDOB2" placeholder="MM/DD/YYYY">
-              </div>
-            </div>
-            <div class="col-md-4 inputGroupContainer">
-                  <div style="" class="inputLabs">Subscriber ID#/SS#</div>
-                  <div class="input-group">
-                      <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                    <input class="form-control"type="text" name="subscriberID2" id="subscriberID2" placeholder="Subscriber ID#/SS#">
-                  </div>
-                </div>
-                <div class="col-md-6 inputGroupContainer">
-                  <div style="" class="inputLabs">Employer</div>
-                  <div class="input-group">
-                      <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                <input class="form-control"type="text" name="employer2" id="employer2" placeholder="Employer">
-              </div>
-            </div>
-              <div class="col-md-6 inputGroupContainer">
-              <div style="" class="inputLabs">Insurance Company Name</div>
-              <div class="input-group">
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-            <input class="form-control"type="text" name="insurComp2" id="insurComp2" placeholder="Insurance Company Name">
-          </div>
-      </div>
-          <div class="col-md-12" style="height: 20px; width: 100%"></div>
-        </div>
-      <!-- </div> -->
-      <!-- </div> -->
-    <div id="medicaidForm4" class="name-row col-md-6 hide">
-      <label style="margin-top: 10px;">Medicaid</label>
-        <!-- <div style="" class="inputLabs">DOB on Card:</div>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                                <!--   </div> -->
+                                <div id="insForm4" class="name-row col-md-12 hide">
+                                    <div class="col-md-12 inputGroupContainer">
+                                        <!-- <div class="input-group"> -->
+                                        <label style="margin-top: 10px;">Commercial/Private Insurance</label></div>
+                                    <div class="col-md-6 inputGroupContainer">
+                                        <div style="" class="inputLabs">Subscriber Name:</div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input class="form-control" type="text" name="subscriberName2" id="subscriberName2" placeholder="Subscriber Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 inputGroupContainer">
+                                        <div style="" class="inputLabs">Subscriber DOB:</div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
+                                            <input class="form-control" type="text" name="subscriberDOB2" id="subscriberDOB2" placeholder="MM/DD/YYYY">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div style="" class="inputLabs">Subscriber ID#/SS#</div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                            <input class="form-control" type="text" name="subscriberID2" id="subscriberID2" placeholder="Subscriber ID#/SS#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 inputGroupContainer">
+                                        <div style="" class="inputLabs">Employer</div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                                            <input class="form-control" type="text" name="employer2" id="employer2" placeholder="Employer">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 inputGroupContainer">
+                                        <div style="" class="inputLabs">Insurance Company Name</div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                            <input class="form-control" type="text" name="insurComp2" id="insurComp2" placeholder="Insurance Company Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12" style="height: 20px; width: 100%"></div>
+                                </div>
+                                <!-- </div> -->
+                                <!-- </div> -->
+                                <div id="medicaidForm4" class="name-row col-md-6 hide">
+                                    <label style="margin-top: 10px;">Medicaid</label>
+                                    <!-- <div style="" class="inputLabs">DOB on Card:</div>
           <input class="inputTxt"type="text" name="DOBcard2" id="DOBcard2" placeholder="DOB ON CARD"> -->
-            <!-- <div style="" class="inputLabs">Medicaid ID</div> -->
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-              <input class="form-control"type="text" name="medicaiID2" id="medicaidID2" placeholder="Medicaid ID#">
-            </div>
-        </div>
-      </div>
-     </div>
-     <div class="form-group">
-       <div class="name-row col-md-12">
-         <!-- <div class="name-row"> -->
-         <button id="addAnotherChild1" type="submit" class="btn btn-primary" >Add Another Child  <span class="glyphicon glyphicon-plus"></span></button>
-       <!-- </div> -->
-     </div>
-   </div>
-  </div>
-  <hr>
-  <div class="col-md-12" style="height: 20px; width: 100%"></div>
+                                    <!-- <div style="" class="inputLabs">Medicaid ID</div> -->
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                        <input class="form-control" type="text" name="medicaiID2" id="medicaidID2" placeholder="Medicaid ID#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="name-row col-md-12">
+                                <!-- <div class="name-row"> -->
+                                <button id="addAnotherChild2" type="submit" class="btn btn-primary">Add Another Child  <span class="glyphicon glyphicon-plus"></span></button>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+<!-- ///Child 3/// -->
+                    <hr>
+                    <div class="col-md-12" style="height: 20px; width: 100%"></div>
+                      <div id="childAdditionNew3" display: "none">
+                        <hr>
+                        <div class="form-group">
+                            <label class="col-md-6" style="margin-left: 10px">Child's Name:</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="name-row">
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input placeholder="First" class="form-control" type="text" name="" id="childName3" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="" id="childLast3" placeholder="Last" class="form-control" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
+                                        <input name="" id="childDOB3" placeholder="MM/DD/YYYY" class="form-control" type="text" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="form-group"> -->
+                            <!-- <input id="insuranceNew2" style="" class="" type="checkbox" name=""> -->
+                            <!-- <div style="display: inline-block; font-size: 20px;">Insurance Type (required)</div> -->
 
+                            <div class="name-row">
+                                <div id="sameInsurance" class="col-md-6 selectContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                                        <select id="insSame4" name="" class="form-control selectpicker">
+                   <option value=""> Select Insurance for the child above</option>
+                     <option value="1">This child has same insurance as child above.</option>
+                     <option value="2">This child has a different insurance from the child above.</option>
+                  </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div id="sameInsuranc" class="hide"> -->
+                            <div class="name-row">
+                                <div class="col-md-12 selectContainer">
+                                    <div class="input-group">
+                                        <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span> -->
+                                        <select id="insChoose4" class="form-control selectpicker hide" name="">
+                <option value="">Select type of insurance</option>
+                  <option value="1">Self Pay (We provide our patients with no dental insurance with a 5% discount)</option>
+                  <option value="2">Private Insurance</option>
+                  <option value="3">Medicaid</option>
+                </select>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                                <!--   </div> -->
+                                <div id="insForm5" class="name-row col-md-12 hide">
+                                    <div class="col-md-12 inputGroupContainer">
+                                        <!-- <div class="input-group"> -->
+                                        <label style="margin-top: 10px;">Commercial/Private Insurance</label></div>
+                                    <div class="col-md-6 inputGroupContainer">
+                                        <div style="" class="inputLabs">Subscriber Name:</div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input class="form-control" type="text" name="subscriberName3" id="subscriberName3" placeholder="Subscriber Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 inputGroupContainer">
+                                        <div style="" class="inputLabs">Subscriber DOB:</div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
+                                            <input class="form-control" type="text" name="subscriberDOB3" id="subscriberDOB3" placeholder="MM/DD/YYYY">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div style="" class="inputLabs">Subscriber ID#/SS#</div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                            <input class="form-control" type="text" name="subscriberID3" id="subscriberID3" placeholder="Subscriber ID#/SS#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 inputGroupContainer">
+                                        <div style="" class="inputLabs">Employer</div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                                            <input class="form-control" type="text" name="employer3" id="employer3" placeholder="Employer">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 inputGroupContainer">
+                                        <div style="" class="inputLabs">Insurance Company Name</div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                            <input class="form-control" type="text" name="insurComp3" id="insurComp3" placeholder="Insurance Company Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12" style="height: 20px; width: 100%"></div>
+                                </div>
+                                <!-- </div> -->
+                                <!-- </div> -->
+                                <div id="medicaidForm4" class="name-row col-md-6 hide">
+                                    <label style="margin-top: 10px;">Medicaid</label>
+                                    <!-- <div style="" class="inputLabs">DOB on Card:</div>
+          <input class="inputTxt"type="text" name="DOBcard2" id="DOBcard2" placeholder="DOB ON CARD"> -->
+                                    <!-- <div style="" class="inputLabs">Medicaid ID</div> -->
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                        <input class="form-control" type="text" name="medicaiID3" id="medicaidID3" placeholder="Medicaid ID#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="name-row col-md-12">
+                                <!-- <div class="name-row"> -->
+                                <button id="addAnotherChild3" type="submit" class="btn btn-primary">Add Another Child  <span class="glyphicon glyphicon-plus"></span></button>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                      </div>
 
-
-
-
-  <!-- <div id="insuranceChild2">
-  <div class="form-group">
-    <label class="col-md-6" style="margin-left: 10px">Child's Name:</label></div>
-    <div class="form-group">
-      <div class="name-row">
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input  name="first_name" placeholder="First" class="form-control"  type="text">
-        </div>
-      </div>
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input name="last_name" placeholder="Last" class="form-control"  type="text">
-        </div>
-      </div>
-      <div class="col-md-3 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-      <input name="dob" placeholder="MM/DD/YYYY" class="form-control"  type="text">
-      </div>
-      </div>
-    </div>
-      <div class="name-row">
-        <div class="col-md-4 selectContainer">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-        <select name="insurance" class="form-control selectpicker" >
-          <option value=" " >Select insurance for the child above</option>
-          <option>Self Pay</option>
-          <option>Private Insurance</option>
-          <option >Medicaid</option>
-          <option >Other</option>
-        </select>
-      </div>
-      </div>
-    </div>
-  </div>
-  <div id="addAnotherChild2" class="col-md-12 addChild"></div> -->
-
-<div class="form-group">
-  <label class="col-md-12" style="margin-left: 10px">Please list below any individual that can bring your child(ren) to their appointments. By listing their name you are also consenting to give this individual(s) permission to receive information, the right to sign the medical history and consent to <a href ="/Routine-Dental-Treatment-Explanation.pdf" target="_blank">routine dental treatment</a>.</label>
-  <!-- <a href ="/Routine-Dental-Treatment-Explanation.pdf" target="_blank">Routine Dental Treatment </a></label> -->
-</div>
-  <div class="form-group">
-    <div class="name-row">
-  <div class="col-md-5 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First" class="form-control"  type="text" required>
-      </div>
-    </div>
-    <div class="col-md-5 inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last" class="form-control"  type="text" required>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- <div class="form-group">
+                    <div class="form-group">
+                        <label class="col-md-12" style="margin-left: 10px">Please list below any individual that can bring your child(ren) to their appointments. By listing their name you are also consenting to give this individual(s) permission to receive information, the right to sign the medical history and consent to <a href ="/Routine-Dental-Treatment-Explanation.pdf" target="_blank">routine dental treatment</a>.</label>
+                        <!-- <a href ="/Routine-Dental-Treatment-Explanation.pdf" target="_blank">Routine Dental Treatment </a></label> -->
+                    </div>
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="first_name" placeholder="First" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="last_name" placeholder="Last" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="form-group">
   <label  class="col-md-12" style="margin-left: 10px;font-weight:normal;">I give this individual permission to receive information and the rights to sign for medical history, consents routine dental treatment:
     <a href ="/Consents-Routine-Dental-Treatment.pdf" target="_blank"> Consent Form </a></label>
 </div> -->
-   <!-- <div class="form-group">
+                    <!-- <div class="form-group">
        <div class="name-row">
          <div class="col-md-5 inputGroupContainer">
            <div class="input-group"> -->
-             <!-- <div class="radio">
+                    <!-- <div class="radio">
                  <label>
                      <input type="radio" name="permission" value="yes" /> Yes
                  </label>
                </div> -->
-             <!-- </div>
+                    <!-- </div>
            </div>
            <div class="col-md-5 inputGroupContainer">
              <div class="input-group"> -->
-               <!-- <div class="radio">
+                    <!-- <div class="radio">
                    <label>
                        <input type="radio" name="permission" value="no" /> No
                    </label>
                  </div> -->
-               <!-- </div>
+                    <!-- </div>
              </div> -->
-             <!-- <div class="col-md-12" style="height:20px"></div> -->
-             <!-- <div id="addAnotherChild1" class="col-md-12 addChild">+ Add Another</div> -->
-             <div class="form-group">
-               <div class="col-md-4">
-                 <div class="contact-row">
-                 <button id="addAnotherChild1" type="submit" class="btn btn-primary" >Add Another Individual  <span class="glyphicon glyphicon-plus"></span></button>
-               </div>
-             </div>
-           </div>
-           <hr>
+                    <!-- <div class="col-md-12" style="height:20px"></div> -->
+                    <!-- <div id="addAnotherChild1" class="col-md-12 addChild">+ Add Another</div> -->
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <div class="contact-row">
+                                <button id="addAnotherChild1" type="submit" class="btn btn-primary">Add Another Individual  <span class="glyphicon glyphicon-plus"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
 
-         <!-- </div>
+                    <!-- </div>
        </div> -->
-       <div class="form-group">
-         <label class="col-md-12" style="margin-left: 10px">Please read each statement and signify approval by checking the box beside it:</label></div>
-          <div class="form-group">
-              <div class="name-row">
-                <div class="col-md-12 inputGroupContainer">
-                  <div class="input-group">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" name="cert1" value="yes" />&nbsp  I am certifying that the information listed is complete and accurate
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                  <div class="name-row">
-                    <div class="col-md-12 inputGroupContainer">
-                      <div class="input-group">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" name="cert2" value="yes" />&nbsp  I am the legal guardian of the children identified above.
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                      <div class="name-row">
-                        <div class="col-md-12 inputGroupContainer">
-                          <div class="input-group">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="cert3" value="yes" />&nbsp  I give the Coastal Kids Dental & Braces permission to take photos of my child for medical records.
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                          <div class="name-row">
+                    <div class="form-group">
+                        <label class="col-md-12" style="margin-left: 10px">Please read each statement and signify approval by checking the box beside it:</label></div>
+                    <div class="form-group">
+                        <div class="name-row">
                             <div class="col-md-12 inputGroupContainer">
-                              <div class="input-group">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="cert4" value="yes" />&nbsp  I have read and understand the <a href ="/Privacy-Act-Document.pdf" target="_blank"> Privacy Act Document. </a>
-                                    </label>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                              <div class="name-row">
-                                <div class="col-md-12 inputGroupContainer">
-                                  <div class="input-group">
+                                <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" name="cert5" value="yes" />&nbsp  I have read and understand <a href ="/Coastal-Kids-Dental-Braces-Office-Policies.pdf" target="_blank"> Coastal Kids Dental & Braces Office Polices</a>.
-                                        </label>
-                                      </div>
+                            <input type="checkbox" name="cert1" value="yes" required/>&nbsp  I am certifying that the information listed is complete and accurate
+                        </label>
                                     </div>
-                                  </div>
                                 </div>
-                              </div>
-                              <div class="form-group">
-                                  <div class="name-row">
-                                    <div class="col-md-12 inputGroupContainer">
-                                      <div class="input-group">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" name="cert6" value="yes" />&nbsp I will be responsible for any fees not covered by my insurance. <a href ="/How-Insurance-Works.pdf" target="_blank"> How insurance works</a>.
-                                            </label>
-                                          </div>
-                                        </div>
-                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-12 inputGroupContainer">
+                                <div class="input-group">
+                                    <div class="checkbox">
+                                        <label>
+                                <input type="checkbox" name="cert2" value="yes" required />&nbsp  I am the legal guardian of the children identified above.
+                            </label>
                                     </div>
-                                  </div>
-                                  <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-12 inputGroupContainer">
+                                <div class="input-group">
+                                    <div class="checkbox">
+                                        <label>
+                                    <input type="checkbox" name="cert3" value="yes" required/>&nbsp  I give the Coastal Kids Dental & Braces permission to take photos of my child for medical records.
+                                </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-12 inputGroupContainer">
+                                <div class="input-group">
+                                    <div class="checkbox">
+                                        <label>
+                                        <input type="checkbox" name="cert4" value="yes" required/>&nbsp  I have read and understand the <a href ="/Privacy-Act-Document.pdf" target="_blank"> Privacy Act Document. </a>
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-12 inputGroupContainer">
+                                <div class="input-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="cert5" value="yes" required/>&nbsp  I have read and understand <a href ="/Coastal-Kids-Dental-Braces-Office-Policies.pdf" target="_blank"> Coastal Kids Dental & Braces Office Polices</a>.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-12 inputGroupContainer">
+                                <div class="input-group">
+                                    <div class="checkbox">
+                                        <label>
+                                                <input type="checkbox" name="cert6" value="yes" required/>&nbsp I will be responsible for any fees not covered by my insurance. <a href ="/How-Insurance-Works.pdf" target="_blank"> How insurance works</a>.
+                                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
 
-<!-- Text input-->
-<!-- <div class="form-group">
+                    <!-- Text input-->
+                    <!-- <div class="form-group">
   <label class="col-md-4 control-label">Website or domain name</label>
    <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
@@ -651,8 +735,8 @@ function googleTranslateElementInit() {
   </div>
 </div> -->
 
-<!-- radio checks -->
- <!-- <div class="form-group">
+                    <!-- radio checks -->
+                    <!-- <div class="form-group">
                         <label class="col-md-4 control-label">Do you have hosting?</label>
                         <div class="col-md-4">
                             <div class="radio">
@@ -668,9 +752,9 @@ function googleTranslateElementInit() {
                         </div>
                     </div> -->
 
-<!-- Text area -->
+                    <!-- Text area -->
 
-<!-- <div class="form-group">
+                    <!-- <div class="form-group">
   <label class="col-md-4 control-label">Project Description</label>
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
@@ -680,54 +764,58 @@ function googleTranslateElementInit() {
   </div>
 </div> -->
 
-<div class="form-group">
-  <label class="col-md-12" style="margin-left: 10px">Entering your name and date below serves as your electronic signature and confirms that the information submitted in this form is valid and accurate:</label>
-</div>
-  <div class="form-group">
-    <div class="name-row">
-        <div class="col-md-6 inputGroupContainer">Name of Legal Guardian:
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="full_name" placeholder="Full Name" class="form-control"  type="text">
-      </div>
+                    <div class="form-group">
+                        <label class="col-md-12" style="margin-left: 10px">Entering your name and date below serves as your electronic signature and confirms that the information submitted in this form is valid and accurate:</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-6 inputGroupContainer">Name of Legal Guardian:
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="full_name" placeholder="Full Name" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-md-2 inputGroupContainer">Date:
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    <input name="date" placeholder="Date" class="form-control" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Success message -->
+                    <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <!-- <div class="form-group"> -->
+                            <div class="contact-row">
+                                <div class="g-recaptcha" data-sitekey="6LdYSCcTAAAAAPVaXQ2gdmDeTe3w_PgqNTGT47_R"></div>
+                                <div class="col-md-12" style="padding-bottom: 20px"></div>
+                                <button type="submit" class="btn btn-warning" style="height:35px; width:200px">Send <span class="glyphicon glyphicon-send"></span></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
     </div>
-        <div class="col-md-2 inputGroupContainer">Date:
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-  <input  name="date" placeholder="Date" class="form-control"  type="text">
-      </div>
     </div>
-  </div>
-</div>
-
-
-
-<!-- Success message -->
-<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
-
-<!-- Button -->
-<div class="form-group">
-  <div class="col-md-12">
-    <!-- <div class="form-group"> -->
-    <div class="contact-row">
-        <div class="g-recaptcha" data-sitekey="6LdYSCcTAAAAAPVaXQ2gdmDeTe3w_PgqNTGT47_R"></div>
-        <div class="col-md-12" style="padding-bottom: 20px"></div>
-    <button type="submit" class="btn btn-warning" style="height:35px; width:200px" >Send <span class="glyphicon glyphicon-send"></span></button>
-
-</div>
-</div>
-  </div>
-</div>
-
-</fieldset>
-</form>
-</div>
-    </div><!-- /.container -->
+    <!-- /.container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/insurance.js"></script>
-      <script src="js/index.js"></script>
-    </body>
-  </html>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/insurance.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
