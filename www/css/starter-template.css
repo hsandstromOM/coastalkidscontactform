@@ -71,10 +71,10 @@ height: 3215px; */
     text-decoration: underline;
     color: rgb(19, 81, 159);
 }*/
-.addChild:hover {
+/*.addChild:hover {
     color: #fff;
     cursor: pointer;
-}
+}*/
 
 /* input[type=radio] {
    border: 0px;

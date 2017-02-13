@@ -580,13 +580,14 @@ if($('#insChoose').val() == '3'){
 $( "#addChildNew" ).click(function() {
   console.log("yo New");
   $( "#childAdditionNew" ).toggle();
-  $("#addChildNew3").removeClass("hide")
+  //$("#addChildNew3").removeClass("hide")
 });
 
 
 $( "#addChildNew3" ).click(function() {
   console.log("yo New");
   $( "#childAdditionNew3" ).toggle();
+//  $("childAdditionNew3").removeClass("hide")
 });
 
 $( "#addChildNew10" ).click(function() {
