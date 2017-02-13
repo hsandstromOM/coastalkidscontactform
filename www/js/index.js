@@ -90,6 +90,7 @@ $(document).ready(function(){
     if($('#insChoose3').val() == '2'){
       console.log("2 3");
       $("#insForm4").removeClass("hide");
+      $("#medicaidForm4").addClass("hide");
     }
 
     if($('#insChoose3').val() == '3'){
