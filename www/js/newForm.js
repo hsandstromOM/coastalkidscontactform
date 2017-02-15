@@ -5,6 +5,12 @@ $(document).ready(function() {
     var newString = "#insuranceChild" + nextIdNumber
     $(newString).show()
   }
+  function findNextInd (currentDiv) {
+    var currentIdNum = parseInt(currentDiv['id'].substr(currentDiv['id'].length - 1))
+    var nextIdNumber = currentIdNum + 1
+    var newString = "#insuranceChild" + nextIdNumber
+    $(newString).show()
+  }
 
 
   function showOrHideOptions (currentDiv) {
@@ -29,6 +35,11 @@ $(document).ready(function() {
   $( ".addChild" ).click(function() {
     var currentDiv = this
     findNextChild(currentDiv)
+  });
+
+  $( ".addInd" ).click(function() {
+    var currentDiv = this
+    findNextInd(currentDiv)
   });
 
   $('.insuranceDropDown').select(function(){

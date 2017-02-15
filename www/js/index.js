@@ -563,11 +563,13 @@ if($('#insChoose10').val() == '3'){
 $('#insChoose').change(function(){
     if($('#insChoose').val() == '1'){
       console.log("1");
+        $("#insForm").addClass("hide");
+        $("#medicaidForm").addClass("hide");
   }
   if($('#insChoose').val() == '2'){
     console.log("2");
     $("#insForm").removeClass("hide");
-
+    $("#medicaidForm").addClass("hide");
 }
 if($('#insChoose').val() == '3'){
   console.log("3");
@@ -577,22 +579,34 @@ if($('#insChoose').val() == '3'){
 }
 });
 
-$( "#addChildNew" ).click(function() {
+$( "#addChildNew2" ).click(function() {
   console.log("yo New");
-  $( "#childAdditionNew" ).toggle();
-  //$("#addChildNew3").removeClass("hide")
+  $( "#childAdditionNew2" ).toggle();
+  $("#addChildNew3").removeClass("hide")
 });
 
 
 $( "#addChildNew3" ).click(function() {
   console.log("yo New");
   $( "#childAdditionNew3" ).toggle();
-//  $("childAdditionNew3").removeClass("hide")
+ // $("childAdditionNew4").removeClass("hide")
 });
 
 $( "#addChildNew10" ).click(function() {
   console.log("yo New 10");
   $( "#childAdditionNew10" ).toggle();
+});
+
+$( "#addAnotherInd2" ).click(function() {
+  console.log("yo New");
+  $( "#indAdditionNew2" ).toggle();
+  $("#addIndNew3").removeClass("hide")
+});
+
+$( "#addAnotherInd3" ).click(function() {
+  console.log("yo New");
+  $( "#indAdditionNew3" ).toggle();
+//  $("#addIndNew4").removeClass("hide")
 });
 
 

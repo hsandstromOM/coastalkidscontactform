@@ -329,8 +329,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="name-row col-md-12">
+                                <div id="addChildNew2" class="btn btn-primary addChild">Add Another Child <span class="glyphicon glyphicon-plus"></span></div>
+                            </div>
+                        </div>
                         <div class="col-md-12" style="height: 20px; width: 100%"></div>
   <!-- Child 2-->
+                      <div id="childAdditionNew2" style="display: none">
                         <div class="form-group">
                             <label class="col-md-6" style="margin-left: 10px">Child's Name:</label>
                         </div>
@@ -431,11 +437,13 @@
                                 </div>
                             </div>
                         </div>
+                      <!-- </div> -->
                         <div class="form-group">
                             <div class="name-row col-md-12">
                                 <div id="addChildNew3" class="btn btn-primary addChild">Add Another Child <span class="glyphicon glyphicon-plus"></span></div>
                             </div>
                         </div>
+                      </div>
                         <div class="col-md-12" style="height: 20px; width: 100%"></div>
 <!--Child 3-->
               <div id="childAdditionNew3" style="display: none">
@@ -538,7 +546,7 @@
                   </div>
                   <div class="form-group">
                       <div class="name-row col-md-12">
-                          <button id="addChildNew4" type="submit" class="btn btn-primary addChild">Add Another Child  <span class="glyphicon glyphicon-plus"></span></button>
+                          <button id="addChildNew4" type="submit" class="btn btn-primary addChild hide">Add Another Child  <span class="glyphicon glyphicon-plus"></span></button>
                       </div>
                   </div>
 <!--End Child 3-->
@@ -546,7 +554,6 @@
                                 <hr>
 <!-- Responsible Individuals-->
                     <div class="col-md-12" style="height: 20px; width: 100%"></div>
-
                     <div class="form-group">
                         <label class="col-md-12" style="margin-left: 10px">Please list below any individual that can bring your child(ren) to their appointments. By listing their name you are also consenting to give this individual(s) permission to receive information, the right to sign the medical history and consent to <a href ="/Routine-Dental-Treatment-Explanation.pdf" target="_blank">routine dental treatment</a>.</label>
                     </div>
@@ -569,11 +576,36 @@
                     <div class="form-group">
                         <div class="col-md-4">
                             <div class="contact-row">
-                                <button id="addAnotherChild1" type="submit" class="btn btn-primary">Add Another Individual  <span class="glyphicon glyphicon-plus"></span></button>
+                                <button id="addAnotherInd2" type="submit" class="btn btn-primary">Add Another Individual  <span class="glyphicon glyphicon-plus"></span></button>
                             </div>
                         </div>
                     </div>
                     <hr>
+                    <div id="indAdditionNew2" style="display: none">
+                    <div class="form-group">
+                        <div class="name-row">
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="first_name" placeholder="First" class="form-control" type="text" >
+                                </div>
+                            </div>
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input name="last_name" placeholder="Last" class="form-control" type="text" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <div class="contact-row">
+                                <button id="addAnotherInd2" class="btn btn-primary">Add Another Individual  <span class="glyphicon glyphicon-plus"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                     <div class="form-group">
                         <label class="col-md-12" style="margin-left: 10px">Please read each statement and signify approval by checking the box beside it:</label></div>
                     <div class="form-group">
