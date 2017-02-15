@@ -34,22 +34,22 @@ $(document).ready(function(){
 
 //////////////////////// insurance section//////////////
 
-  function getInsurance() {
-    var insurance = document.getElementById("insurance");
-    if(insurance.checked) {
-      // TODO dropbox
-      $("#insChoose").addClass("show");
-    console.log("checked");
-    }
-    if(insurance.checked != true) {
-      console.log("nope");
-      $("#insChoose").removeClass("show");
-      $("#insForm").addClass("hide");
-      $("#medicaidForm").addClass("hide");
-    }
-  }
-
-  $("#insurance").click(getInsurance);
+  // function getInsurance() {
+  //   var insurance = document.getElementById("insurance");
+  //   if(insurance.checked) {
+  //     // TODO dropbox
+  //     $("#insChoose").addClass("show");
+  //   console.log("checked");
+  //   }
+  //   if(insurance.checked != true) {
+  //     console.log("nope");
+  //     $("#insChoose").removeClass("show");
+  //     $("#insForm").addClass("hide");
+  //     $("#medicaidForm").addClass("hide");
+  //   }
+  // }
+  //
+  // $("#insurance").click(getInsurance);
 
 
   function getInsurance2() {
