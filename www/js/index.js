@@ -84,17 +84,20 @@ $(document).ready(function(){
   $('#insChoose3').change(function() {
     if($('#insChoose3').val() == '1'){
       console.log("1 3");
+      $("#payForm4").removeClass("hide");
       $("#insForm4").addClass("hide");
       $("#medicaidForm4").addClass("hide");
     }
     if($('#insChoose3').val() == '2'){
       console.log("2 3");
+      $("#payForm4").addClass("hide");
       $("#insForm4").removeClass("hide");
       $("#medicaidForm4").addClass("hide");
     }
 
     if($('#insChoose3').val() == '3'){
       console.log("3");
+      $("#payForm4").addClass("hide");
       $("#insForm4").addClass("hide");
       $("#medicaidForm4").removeClass("hide");
     }
@@ -496,19 +499,21 @@ $("#insuranceNew3").click(getInsurance3);
 $('#insChoose4').change(function(){
     if($('#insChoose4').val() == '1'){
       console.log("1 4");
+      $("#payForm4").removeClass("hide");
       $("#insForm4").addClass("hide");
       $("#medicaidForm4").addClass("hide");
   }
   if($('#insChoose4').val() == '2'){
     console.log("2 4");
      $("#insForm4").removeClass("hide");
-
+     $("#payForm4").addClass("hide");
 }
 
 if($('#insChoose4').val() == '3'){
   console.log("4");
   $("#insForm4").addClass("hide");
   $("#medicaidForm4").removeClass("hide");
+  $("#payForm4").addClass("hide");
 
 }
 
@@ -563,21 +568,25 @@ if($('#insChoose10').val() == '3'){
 $('#insChoose').change(function(){
     if($('#insChoose').val() == '1'){
       console.log("1");
+      $("#payForm").removeClass("hide");
         $("#insForm").addClass("hide");
         $("#medicaidForm").addClass("hide");
   }
   if($('#insChoose').val() == '2'){
     console.log("2");
+    $("#payForm").addClass("hide");
     $("#insForm").removeClass("hide");
     $("#medicaidForm").addClass("hide");
 }
 if($('#insChoose').val() == '3'){
   console.log("3");
+  $("#payForm").addClass("hide");
   $("#insForm").addClass("hide");
   $("#medicaidForm").removeClass("hide");
 
 }
 });
+
 
 $( "#addChildNew2" ).click(function() {
   console.log("yo New");
