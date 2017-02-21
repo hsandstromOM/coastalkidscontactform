@@ -1,9 +1,24 @@
 $(document).ready(function(){
+    $("contact_form").submit(function(){
+        $("input").each(function(index, obj){
+            if($(obj).val() == "") {
+                $(obj).remove();
+            }
+        });
+    });
+
 
   function findNextChild (currentDiv) {
     var currentIdNum = parseInt(currentDiv['id'].substr(currentDiv['id'].length - 1))
     var nextIdNumber = currentIdNum + 1
     var newString = "#insuranceChild" + nextIdNumber
+    $(newString).show()
+  }
+
+  function findNextInd (currentDiv) {
+    var currentIdNum = parseInt(currentDiv['id'].substr(currentDiv['id'].length - 1))
+    var nextIdNumber = currentIdNum + 1
+    var newString = "#responsibleInd" + nextIdNumber
     $(newString).show()
   }
 
@@ -29,6 +44,11 @@ $(document).ready(function(){
   $( ".addChild" ).click(function() {
     var currentDiv = this
     findNextChild(currentDiv)
+  });
+
+  $( ".addInd" ).click(function() {
+    var currentDiv = this
+    findNextInd(currentDiv)
   });
 
   $('.insuranceDropDown').change(function(){

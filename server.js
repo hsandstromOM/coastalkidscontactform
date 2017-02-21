@@ -9,11 +9,11 @@ var ecstatic = require('ecstatic');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var transporter = nodemailer.createTransport('smtps://dentalcoastalkids%40gmail.com:coastalkids@smtp.gmail.com');
+var transporter = nodemailer.createTransport('smtps://hosea%40obviouslee.com:hosea@smtp.obviouslee.com');
 app.get('/appointment', bodyParser.json(),function(req,res) {
   var mailOptions = {
     from : req.query.email,
-    to : 'dentalcoastalkids@gmail.com',
+    to : 'hosea@obviouslee.com',
     subject : "Coastal Kids Appointment Form",
     text :
     "New or Returning Patient: " +req.query.patientStatus +

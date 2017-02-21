@@ -73,6 +73,7 @@ $(document).ready(function(){
   $('#insSame3').change(function() {
     if($('#insSame3').val() == '1'){
       console.log("1");
+      $("#insChoose3").addClass("hide")
     }
     if($('#insSame3').val() == '2'){
       console.log("2");
@@ -589,20 +590,51 @@ if($('#insChoose').val() == '3'){
 
 
 $( "#addChildNew2" ).click(function() {
-  console.log("yo New");
+  console.log("New Child 2");
   $( "#childAdditionNew2" ).toggle();
-  $("#addChildNew3").removeClass("hide")
+  $("#addChildNew3").removeClass("hide");
+
 });
 
 
 $( "#addChildNew3" ).click(function() {
-  console.log("yo New");
+  console.log("New Child 3");
   $( "#childAdditionNew3" ).toggle();
- // $("childAdditionNew4").removeClass("hide")
+ $("childAdditionNew4").removeClass("hide")
+});
+$( "#addChildNew4" ).click(function() {
+  console.log("New Child 4");
+  $( "#childAdditionNew4" ).toggle();
+ $("childAdditionNew5").removeClass("hide")
+});
+$( "#addChildNew5" ).click(function() {
+  console.log("New Child 5");
+  $( "#childAdditionNew5" ).toggle();
+ $("childAdditionNew6").removeClass("hide")
+});
+$( "#addChildNew6" ).click(function() {
+  console.log("New Child 6");
+  $( "#childAdditionNew6" ).toggle();
+ $("childAdditionNew7").removeClass("hide")
+});
+$( "#addChildNew7" ).click(function() {
+  console.log("New Child 7");
+  $( "#childAdditionNew7" ).toggle();
+ $("childAdditionNew8").removeClass("hide")
+});
+$( "#addChildNew8" ).click(function() {
+  console.log("New Child 8");
+  $( "#childAdditionNew8" ).toggle();
+ $("childAdditionNew9").removeClass("hide")
+});
+$( "#addChildNew9" ).click(function() {
+  console.log("New Child 9");
+  $( "#childAdditionNew9" ).toggle();
+ $("childAdditionNew10").removeClass("hide")
 });
 
 $( "#addChildNew10" ).click(function() {
-  console.log("yo New 10");
+  console.log("New Child 10");
   $( "#childAdditionNew10" ).toggle();
 });
 
@@ -615,11 +647,17 @@ $( "#addAnotherInd2" ).click(function() {
 $( "#addAnotherInd3" ).click(function() {
   console.log("yo New");
   $( "#indAdditionNew3" ).toggle();
-//  $("#addIndNew4").removeClass("hide")
+ $("#addIndNew4").removeClass("hide")
+});
+$( "#addAnotherInd4" ).click(function() {
+  console.log("yo New");
+  $( "#indAdditionNew4" ).toggle();
+ // $("#addIndNew5").removeClass("hide")
 });
 
 
 /////////////////////////////// ^^ insurance section ///////////////
+
 
   $('#apptType input').on('change', function() {
     var apptType = ($('input[name=appt]:checked', '#apptType').val());
@@ -651,7 +689,7 @@ $( "#addAnotherInd3" ).click(function() {
 
       //////GABRIEL HERE ///////
 
-  var formP = document.getElementById('patientForm'); // form has to have ID: <form id="formID">
+  var formP = document.getElementById('contactForm'); // form has to have ID: <form id="formID">
   if(formP) {
     formP.noValidate = true;
 
@@ -671,7 +709,7 @@ $( "#addAnotherInd3" ).click(function() {
 
 function checkIt() {
 
-  var ref = $('#patientForm').find("[required]");
+  var ref = $('#contact_form').find("[required]");
     $(ref).each(function(){
        if ( $(this).val() == '' )
        {
