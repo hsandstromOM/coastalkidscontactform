@@ -18,7 +18,6 @@ http://www.coastalkidsdental.com/
 
 ## Testing URL
 https://coastal-kids-form.herokuapp.com/
-https://coastal-kids-form.herokuapp.com/patientIns.html
 
 ## Site Map
 
@@ -29,7 +28,7 @@ Google Drive link with sitemap
 link to Google Drive folder with design assets
 link to prototype
 
-## Documentation 
+## Documentation
 
 link to Google Doc with additional documentation
 
@@ -59,11 +58,8 @@ examples: newsletter signup, custom map, form
 
 ## Assets
 
-https://drive.google.com/open?id=0ByQIC61sOL9OR2lERmMzSlVxdGs
-
 ## Favicon
 
-link to image on Google Drive folder
 
 ## Analytics
 

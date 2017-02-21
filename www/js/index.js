@@ -655,6 +655,12 @@ $( "#addAnotherInd4" ).click(function() {
  // $("#addIndNew5").removeClass("hide")
 });
 
+$( "#sendIt" ).click(function() {
+  console.log("Email Sent");
+  $( "#success_message" ).toggle();
+ $("#success_message").removeClass("hide")
+});
+
 
 /////////////////////////////// ^^ insurance section ///////////////
 
@@ -1031,6 +1037,7 @@ patient.medicaidID10 = medicaidID10
 // }
 
     });
+
 
 //  }, false);
 };

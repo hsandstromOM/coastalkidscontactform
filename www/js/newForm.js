@@ -3,7 +3,7 @@ var message = "";
 $("#sendMessage").on("click", function() {
     message = $("#contact_form").serialize();
     $.ajax({
-        url: "https://formspree.io/hosea@obviouslee.com", 
+        url: "https://formspree.io/hosea@obviouslee.com",
         method: "POST",
         data: {message: message},
         dataType: "json"
@@ -179,4 +179,4 @@ $(document).ready(function() {
               console.log(result);
           }, 'json');
       });
-});
+)
