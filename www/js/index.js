@@ -655,7 +655,7 @@ $( "#addAnotherInd4" ).click(function() {
  // $("#addIndNew5").removeClass("hide")
 });
 
-$( "#sendIt" ).click(function() {
+$( "#sendIt" ).on('change', function() {
   console.log("Email Sent");
   $( "#success_message" ).toggle();
  $("#success_message").removeClass("hide")
@@ -695,7 +695,7 @@ $( "#sendIt" ).click(function() {
 
       //////GABRIEL HERE ///////
 
-  var formP = document.getElementById('contactForm'); // form has to have ID: <form id="formID">
+  var formP = document.getElementById('#contact_form'); // form has to have ID: <form id="formID">
   if(formP) {
     formP.noValidate = true;
 
@@ -707,9 +707,9 @@ $( "#sendIt" ).click(function() {
                   event.preventDefault(); // dismiss the default functionality
                   // alert('Please fill in the required fields.'); // error message
                   checkIt();
-              } else {
-                getItDone()
-              }
+               } //else {
+              //   getItDone()
+              // }
   });
   }
 
@@ -719,7 +719,7 @@ function checkIt() {
     $(ref).each(function(){
        if ( $(this).val() == '' )
        {
-           alert("Required field should not be blank.");
+           alert("Please fill out all required fields.");
            $(this).focus();
 
            return false;
