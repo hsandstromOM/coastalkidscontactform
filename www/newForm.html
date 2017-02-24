@@ -27,7 +27,7 @@
 <body>
     <div class="container">
 
-        <form class="well form-horizontal form-validation" action="https://formspree.io/emily@obviouslee.com" method="post" id="contact_form">
+        <form class="well form-horizontal form-validation" id="contact_form">
             <fieldset>
 
                 <div id="google_translate_element" style=""></div>
@@ -64,13 +64,13 @@
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group form-validation">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="First Name of Primary Legal Guardian" placeholder="First" class="form-control" type="text" required>
+                                    <input name="Legal_Guardian" id="legal_guardian" placeholder="First" class="form-control" type="text" required>
                                 </div>
                             </div>
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="Last Name of Primary Legal Guardian" placeholder="Last" class="form-control" type="text" required >
+                                    <input name="Last Name of Primary Legal Guardian" id="legal_guardianL" placeholder="Last" class="form-control" type="text" required >
                                 </div>
                             </div>
                         </div>
@@ -80,13 +80,13 @@
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="First Name of Secondary Legal Guardian" placeholder="First" class="form-control" type="text" required>
+                                    <input name="First Name of Secondary Legal Guardian" id="legal_guardian2" placeholder="First" class="form-control" type="text">
                                 </div>
                             </div>
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="Last Name of Secondary Legal Guardian" placeholder="Last" class="form-control" type="text" required>
+                                    <input name="Last Name of Secondary Legal Guardian" id="legal_guardianL2" placeholder="Last" class="form-control" type="text">
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                             <div class="col-md-10 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                    <input name="Mailing Address" placeholder="Address" class="form-control" type="text" required >
+                                    <input name="Mailing Address" id="address" placeholder="Address" class="form-control" type="text" required >
                                 </div>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                    <input name="City" placeholder="City" class="form-control" type="text" required >
+                                    <input name="City" placeholder="City" id="city" class="form-control" type="text" required >
                                 </div>
                             </div>
 
@@ -123,7 +123,7 @@
                             <div class="col-md-2 selectContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                    <select name="State" class="form-control selectpicker" required>
+                                    <select name="State" id="state" class="form-control selectpicker" required>
       <option value=" " >State</option>
       <option>Alabama</option>
       <option>Alaska</option>
@@ -185,7 +185,7 @@
                             <div class="col-md-3 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                    <input name="Zip Code" placeholder="Zip Code" class="form-control" type="text" required>
+                                    <input name="Zip Code" placeholder="Zip Code" id="zip" class="form-control" type="text" required>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +227,7 @@
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                    <input name="Email Address" placeholder="Email" class="form-control" type="text" required>
+                                    <input name="Email Address" placeholder="Email" id="email"class="form-control" type="text" required>
                                 </div>
                             </div>
                         </div>
@@ -729,13 +729,13 @@
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="Responsible Party 1 First Name" placeholder="First" class="form-control" type="text" required>
+                                    <input name="Responsible Party 1 First Name" placeholder="First" class="form-control" type="text">
                                 </div>
                             </div>
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="Responsible Party 1 Last Name" placeholder="Last" class="form-control" type="text" required>
+                                    <input name="Responsible Party 1 Last Name" placeholder="Last" class="form-control" type="text">
                                 </div>
                             </div>
                         </div>
@@ -930,10 +930,10 @@
 
 
                     <!-- Success message -->
-                    <div class="alert alert-success hide" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+                    <div class="alert alert-success" role="alert" id="success_message" style="display: none">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
 
-                    <input type="hidden" name="_subject" value="New contact form submission" />
-                    <input type="hidden" name="_next" value="http://coastalkidsdental.com" />
+                    <!-- <input type="hidden" name="_subject" value="New contact form submission" /> -->
+                    <!-- <input type="hidden" id="redirect" name="_next" value="http://coastalkidsdental.com" /> -->
 
                     <!--Honeypot for catching bots-->
                     <input type="text" name="_gotcha" style="display:none" />

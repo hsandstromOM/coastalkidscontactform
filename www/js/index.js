@@ -604,11 +604,11 @@ $( "#addAnotherInd4" ).click(function() {
  // $("#addIndNew5").removeClass("hide")
 });
 
-// $( "#sendIt" ).on('change', function() {
-//   console.log("Email Sent");
-//   $( "#success_message" ).toggle();
-//  $("#success_message").removeClass("hide")
-// });
+$( "#sendIt" ).on('click', function() {
+  console.log("Email Sent");
+  $( "#success_message" ).toggle();
+ $("#success_message").removeClass("hide")
+});
 
 
 /////////////////////////////// ^^ insurance section ///////////////
@@ -640,6 +640,48 @@ $( "#addAnotherInd4" ).click(function() {
     patient.timePreference = timePreference
 
   });
+
+  $('#contact_form').on('submit', function(e) {
+       e.preventDefault();
+       var legal_guardian = $('#legal_guardian').val();
+       var legal_guardianL = $('#legal_guardianL').val();
+       var legal_guardian2 = $('#legal_guardian2').val();
+       var legal_guardianL2 = $('#legal_guardianL2').val();
+       var email = $('#email').val();
+       var address = $('#address').val();
+       var city = $('#city').val();
+       var state = $('#state').val();
+       var zip = $('#zip').val();
+       //send to formspree
+       $.ajax({
+           url:'https://formspree.io/hosea@obviouslee.com',
+           method:'POST',
+           data:{
+               "Legal Guardian First Name":legal_guardian,
+               "Legal Guardian Last Name":legal_guardianL,
+               "Legal Guardian 2 First Name" :legal_guardian2,
+               "Legal Guardian 2 Last Name" :legal_guardianL2,
+               "Email" :email,
+               "Address" :address,
+               "City" :city,
+               "State" :state,
+               "Zip Code" :zip,
+
+
+
+               _subject:'Contact Form Submission',
+           },
+           dataType:"json",
+           success:function() {
+               console.log('success');
+               $('#success_message').show();
+               window.location.href = "http://www.coastalkidsdental.com";
+           }
+
+       });
+
+   });
+
 
 
       //////GABRIEL HERE ///////
