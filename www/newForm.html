@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/shims/form-validation.js">
 
     <title>Patient Intake Form</title>
 
@@ -27,7 +27,7 @@
 <body>
     <div class="container">
 
-        <form class="well form-horizontal" action="https://formspree.io/emily@obviouslee.com" method="post" id="contact_form">
+        <form class="well form-horizontal form-validation" action="https://formspree.io/emily@obviouslee.com" method="post" id="contact_form">
             <fieldset>
 
                 <div id="google_translate_element" style=""></div>
@@ -62,7 +62,7 @@
                     <div class="form-group">
                         <div class="name-row">
                             <div class="col-md-5 inputGroupContainer">
-                                <div class="input-group">
+                                <div class="input-group form-validation">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                     <input name="First Name of Primary Legal Guardian" placeholder="First" class="form-control" type="text" required>
                                 </div>
@@ -963,8 +963,10 @@
     </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/insurance.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
     <script src="js/index.js"></script>
     <script src="js/newForm.js"></script>
+    <script src="js/validate.js"></script>
 </body>
 
 </html>

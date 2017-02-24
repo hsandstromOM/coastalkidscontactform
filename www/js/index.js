@@ -1,55 +1,4 @@
 $(document).ready(function(){
-  var patient = {};
-  patient.patientStatus = "Not answered"
-  patient.timePreference = "Not answered"
-  patient.apptType = "Not answered"
-  patient.location = "Not answered"
-  patient.contactMethod = "Not answered"
-  patient.dayPreference = "Not answered"
-  patient.phone = "Not answered"
-  patient.comments = "Not answered"
-  // patient.subscriberName1 = "N/A"
-  // patient.subscriberID1 = "N/A"
-  // patient.subscriberDOB1 = "N/A"
-  // patient.employer1 = "N/A"
-  // patient.insurComp1 = "N/A"
-  // patient.DOBcard1 = "N/A"
-  // patient.medicaidID1 = "N/A"
-
-///////// new patient and returning patient toggle/////
-  var newButton = document.getElementById("newPt");
-  var retButton = document.getElementById("retPt");
-  $('#patientToggle input').on('change', function() {
-    var patientStatus = ($('input[name=rad]:checked', '#patientToggle').val());
-    console.log(patientStatus);
-    patient.patientStatus = patientStatus;
-    if(retButton.checked) {
-      console.log("Hide");
-      $("#newPtHear").addClass("hide"); ///// how did you hear from us toggle
-    }
-    if(newButton.checked) {
-      $("#newPtHear").removeClass("hide"); ///// how did you hear from us toggle
-    }
-  });
-
-//////////////////////// insurance section//////////////
-
-  // function getInsurance() {
-  //   var insurance = document.getElementById("insurance");
-  //   if(insurance.checked) {
-  //     // TODO dropbox
-  //     $("#insChoose").addClass("show");
-  //   console.log("checked");
-  //   }
-  //   if(insurance.checked != true) {
-  //     console.log("nope");
-  //     $("#insChoose").removeClass("show");
-  //     $("#insForm").addClass("hide");
-  //     $("#medicaidForm").addClass("hide");
-  //   }
-  // }
-  //
-  // $("#insurance").click(getInsurance);
 
 
   function getInsurance2() {
@@ -655,11 +604,11 @@ $( "#addAnotherInd4" ).click(function() {
  // $("#addIndNew5").removeClass("hide")
 });
 
-$( "#sendIt" ).on('change', function() {
-  console.log("Email Sent");
-  $( "#success_message" ).toggle();
- $("#success_message").removeClass("hide")
-});
+// $( "#sendIt" ).on('change', function() {
+//   console.log("Email Sent");
+//   $( "#success_message" ).toggle();
+//  $("#success_message").removeClass("hide")
+// });
 
 
 /////////////////////////////// ^^ insurance section ///////////////
@@ -695,37 +644,37 @@ $( "#sendIt" ).on('change', function() {
 
       //////GABRIEL HERE ///////
 
-  var formP = document.getElementById('#contact_form'); // form has to have ID: <form id="formID">
-  if(formP) {
-    formP.noValidate = true;
-
-  // ///////// new patient form section
-    formP.addEventListener('submit', function(event) { // listen for form submitting
-      event.preventDefault();
-
-      if (!event.target.checkValidity()) {
-                  event.preventDefault(); // dismiss the default functionality
-                  // alert('Please fill in the required fields.'); // error message
-                  checkIt();
-               } //else {
-              //   getItDone()
-              // }
-  });
-  }
-
-function checkIt() {
-
-  var ref = $('#contact_form').find("[required]");
-    $(ref).each(function(){
-       if ( $(this).val() == '' )
-       {
-           alert("Please fill out all required fields.");
-           $(this).focus();
-
-           return false;
-       }
-})
-}
+//   var formP = document.getElementById('#contact_form'); // form has to have ID: <form id="formID">
+//   if(formP) {
+//     formP.noValidate = true;
+//
+//   // ///////// new patient form section
+//     formP.addEventListener('submit', function(event) { // listen for form submitting
+//       event.preventDefault();
+//
+//       if (!event.target.checkValidity()) {
+//                   event.preventDefault(); // dismiss the default functionality
+//                   // alert('Please fill in the required fields.'); // error message
+//                   checkIt();
+//                } //else {
+//               //   getItDone()
+//               // }
+//   });
+//   }
+//
+// function checkIt() {
+//
+//   var ref = $('#contact_form').find("[required]");
+//     $(ref).each(function(){
+//        if ( $(this).val() == '' )
+//        {
+//            alert("Please fill out all required fields.");
+//            $(this).focus();
+//
+//            return false;
+//        }
+// })
+// }
 
  function getItDone() {
 

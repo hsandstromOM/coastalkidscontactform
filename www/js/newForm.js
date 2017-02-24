@@ -1,17 +1,6 @@
-var message = "";
 
-$("#sendMessage").on("click", function() {
-    message = $("#contact_form").serialize();
-    $.ajax({
-        url: "https://formspree.io/hosea@obviouslee.com",
-        method: "POST",
-        data: {message: message},
-        dataType: "json"
-    });
-    alert('Thanks for the email, we\'ll be in touch promptly.');
-    return false;
-});
 $(document).ready(function() {
+
   function findNextChild (currentDiv) {
     var currentIdNum = parseInt(currentDiv['id'].substr(currentDiv['id'].length - 1))
     var nextIdNumber = currentIdNum + 1

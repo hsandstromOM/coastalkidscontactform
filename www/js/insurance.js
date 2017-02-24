@@ -1,11 +1,4 @@
 $(document).ready(function(){
-    $("contact_form").submit(function(){
-        $("input").each(function(index, obj){
-            if($(obj).val() == "") {
-                $(obj).remove();
-            }
-        });
-    });
 
 
   function findNextChild (currentDiv) {
