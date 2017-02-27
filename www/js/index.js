@@ -794,6 +794,7 @@ $( "#sendIt" ).on('click', function() {
                "Zip Code" :zip,
                "Phone" :phone,
                "Alt. Phone" :alt_phone,
+               //CHILD 1 INFO
                "-CHILD 1 INFORMATION-" :child1,
                "First Name" :child_1_first_name,
                "Last Name" :child_1_last_name,
@@ -807,6 +808,7 @@ $( "#sendIt" ).on('click', function() {
                "-Employer"  :employer1,
                "-Company" :insurCompany1,
                "Medicaid ID Number" :medicaid_id1,
+               //CHILD 2 INFO
                "-CHILD 2 INFORMATION-" :child2,
                "First Name" :child_2_first_name,
                "Last Name" :child_2_last_name,
@@ -821,6 +823,7 @@ $( "#sendIt" ).on('click', function() {
                "-Employer"  :employer2,
                "-Company" :insurCompany2,
                "Medicaid ID Number" :medicaid_id2,
+               //CHILD 3 INFO
                "-CHILD 3 INFORMATION-" :child3,
                "First Name" :child_3_first_name,
                "Last Name" :child_3_last_name,
@@ -835,9 +838,33 @@ $( "#sendIt" ).on('click', function() {
                "-Employer"  :employer3,
                "-Company" :insurCompany3,
                "Medicaid ID Number" :medicaid_id3,
+               //CHILD 4 INFO
+               "-CHILD 4 INFORMATION-" :child4,
+               "First Name" :child_4_first_name,
+               "Last Name" :child_4_last_name,
+               "D.O.B." :child_4_dob,
+               "Same insurance as child above?" :insSame4,
+               "INSURANCE CHOICE" :insChoose4,
+               "Private Insurance Information" :child4private,
+               "-Subscriber First Name" :subscriberFirstName4,
+               "-Subscriber Last Name" :subscriberLastName4,
+               "-D.O.B" :subscriberDOB4,
+               "-ID Number" :subscriberID4,
+               "-Employer"  :employer4,
+               "-Company" :insurCompany4,
+               "Medicaid ID Number" :medicaid_id4,
+               //RESPONSIBLE PARTY INFO
+               "Responsible Person First Name" :rp_1_first,
+               "Responsible Person Last Name" :rp_1_last,
+               "Responsible Person 2 First Name" :rp_2_first,
+               "Responsible Person 2 Last Name" :rp_2_last,
+               "Responsible Person 3 First Name" :rp_3_first,
+               "Responsible Person 3 Last Name" :rp_3_last,
+               "Responsible Person 4 First Name" :rp_4_first,
+               "Responsible Person 4 Last Name" :rp_4_last,
 
 
-               _subject:'Contact Form Submission',
+               _subject:'Insurance Form Submission',
            },
            dataType:"json",
            success:function() {
