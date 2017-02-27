@@ -512,7 +512,7 @@ $('#insChoose4').change(function(){
      $("#payForm4").addClass("hide");
 }
 
-if($('#insChoose4').val() == '3medicaid'){
+if($('#insChoose4').val() == 'medicaid'){
   console.log("4");
   $("#insForm4").addClass("hide");
   $("#medicaidForm4").removeClass("hide");
@@ -657,11 +657,11 @@ $( "#addAnotherInd4" ).click(function() {
  // $("#addIndNew5").removeClass("hide")
 });
 
-$( "#sendIt" ).on('click', function() {
-  console.log("Sending Email");
-  $( "#success_message" ).toggle();
- $("#success_message").removeClass("hide")
-});
+// $( "#sendIt" ).on('click', function() {
+//   console.log("Sending Email");
+//   $( "#success_message" ).toggle();
+//  $("#success_message").removeClass("hide")
+// });
 
 
 /////////////////////////////// ^^ insurance section ///////////////
@@ -694,9 +694,10 @@ $( "#sendIt" ).on('click', function() {
 
   });
 
-
+var $contact_form = $('#contact_form');
   $('#contact_form').on('submit', function(e) {
        e.preventDefault();
+
        var legal_guardian = $('#legal_guardian').val();
        var legal_guardianL = $('#legal_guardianL').val();
        var legal_guardian2 = $('#legal_guardian2').val();
@@ -708,6 +709,7 @@ $( "#sendIt" ).on('click', function() {
        var zip = $('#zip').val();
        var phone = $('#phone').val();
        var alt_phone = $('#alt_phone').val();
+
        var child1 = $('#child1').val();
        var child_1_first_name = $('#child_1_first_name').val();
        var child_1_last_name = $('#child_1_last_name').val();
@@ -722,7 +724,7 @@ $( "#sendIt" ).on('click', function() {
        var insurCompany1 = $("#insurCompany1").val();
        var child1medicaid = $("#child1medicaid").val();
        var medicaid_id1 = $("#medicaid_id1").val();
-       //Child 2
+
        var child2 = $('#child2').val();
        var child_2_first_name = $('#child_2_first_name').val();
        var child_2_last_name = $('#child_2_last_name').val();
@@ -737,7 +739,7 @@ $( "#sendIt" ).on('click', function() {
        var employer2 = $("#employer2").val();
        var insurCompany2 = $("#insurCompany2").val();
        var medicaid_id2 = $("#medicaid_id2").val();
-       //Child 3
+
        var child3 = $('#child3').val();
        var child_3_first_name = $('#child_3_first_name').val();
        var child_3_last_name = $('#child_3_last_name').val();
@@ -752,7 +754,7 @@ $( "#sendIt" ).on('click', function() {
        var employer3 = $("#employer3").val();
        var insurCompany3 = $("#insurCompany3").val();
        var medicaid_id3 = $("#medicaid_id3").val();
-       //Child 4
+
        var child4 = $('#child4').val();
        var child_4_first_name = $('#child_4_first_name').val();
        var child_4_last_name = $('#child_4_last_name').val();
@@ -767,7 +769,7 @@ $( "#sendIt" ).on('click', function() {
        var employer4 = $("#employer4").val();
        var insurCompany4 = $("#insurCompany4").val();
        var medicaid_id4 = $("#medicaid_id4").val();
-       //Responsible Parties
+
        var rp_1_first = $("#rp_1_first").val();
        var rp_1_last = $("#rp_1_last").val();
        var rp_2_first = $("#rp_2_first").val();
@@ -777,10 +779,21 @@ $( "#sendIt" ).on('click', function() {
        var rp_4_first = $("#rp_4_first").val();
        var rp_4_last = $("#rp_4_last").val();
 
+       var complete_and_accurate = $("#complete_and_accurate").val();
+       var legal_guardian_for_children_listed = $("#legal_guardian_for_children_listed").val();
+       var give_permission = $("#give_permission").val();
+       var understand = $("#understand").val();
+       var understand_office = $("#understand_office").val();
+       var responsible = $("#responsible").val();
+
+       var full_name = $("#full_name").val();
+       var date_signed = $("#date_signed").val();
+
+
 
        //send to formspree
        $.ajax({
-           url:'https://formspree.io/hosea@obviouslee.com',
+           url:'https://formspree.io/emily@obviouslee.com',
            method:'POST',
            data:{
                "Legal Guardian First Name":legal_guardian,
@@ -794,7 +807,6 @@ $( "#sendIt" ).on('click', function() {
                "Zip Code" :zip,
                "Phone" :phone,
                "Alt. Phone" :alt_phone,
-               //CHILD 1 INFO
                "-CHILD 1 INFORMATION-" :child1,
                "First Name" :child_1_first_name,
                "Last Name" :child_1_last_name,
@@ -808,52 +820,48 @@ $( "#sendIt" ).on('click', function() {
                "-Employer"  :employer1,
                "-Company" :insurCompany1,
                "Medicaid ID Number" :medicaid_id1,
-               //CHILD 2 INFO
                "-CHILD 2 INFORMATION-" :child2,
-               "First Name" :child_2_first_name,
-               "Last Name" :child_2_last_name,
-               "D.O.B." :child_2_dob,
+               "#2 First Name" :child_2_first_name,
+               "#2 Last Name" :child_2_last_name,
+               "#2 D.O.B." :child_2_dob,
                "Same insurance as child above?" :insSame3,
-               "INSURANCE CHOICE" :insChoose3,
-               "Private Insurance Information" :child2private,
-               "-Subscriber First Name" :subscriberFirstName2,
-               "-Subscriber Last Name" :subscriberLastName2,
-               "-D.O.B" :subscriberDOB2,
-               "-ID Number" :subscriberID2,
-               "-Employer"  :employer2,
-               "-Company" :insurCompany2,
-               "Medicaid ID Number" :medicaid_id2,
-               //CHILD 3 INFO
+               "#2 INSURANCE CHOICE" :insChoose3,
+               "#2 Private Insurance Information" :child2private,
+               "-#2 Subscriber First Name" :subscriberFirstName2,
+               "-#2 Subscriber Last Name" :subscriberLastName2,
+               "-#2 D.O.B" :subscriberDOB2,
+               "-#2 ID Number" :subscriberID2,
+               "-#2 Employer"  :employer2,
+               "-#2 Company" :insurCompany2,
+               "#2 Medicaid ID Number" :medicaid_id2,
                "-CHILD 3 INFORMATION-" :child3,
-               "First Name" :child_3_first_name,
-               "Last Name" :child_3_last_name,
-               "D.O.B." :child_3_dob,
-               "Same insurance as child above?" :insSame3,
-               "INSURANCE CHOICE" :insChoose3,
-               "Private Insurance Information" :child3private,
-               "-Subscriber First Name" :subscriberFirstName3,
-               "-Subscriber Last Name" :subscriberLastName3,
-               "-D.O.B" :subscriberDOB3,
-               "-ID Number" :subscriberID3,
-               "-Employer"  :employer3,
-               "-Company" :insurCompany3,
-               "Medicaid ID Number" :medicaid_id3,
-               //CHILD 4 INFO
+               "#3 First Name" :child_3_first_name,
+               "#3 Last Name" :child_3_last_name,
+               "#3 D.O.B." :child_3_dob,
+               "#3 Same insurance as child above?" :insSame3,
+               "#3 INSURANCE CHOICE" :insChoose3,
+               "#3 Private Insurance Information" :child3private,
+               "-#3 Subscriber First Name" :subscriberFirstName3,
+               "-#3 Subscriber Last Name" :subscriberLastName3,
+               "-#3 D.O.B" :subscriberDOB3,
+               "-#3 ID Number" :subscriberID3,
+               "-#3Employer"  :employer3,
+               "-#3 Company" :insurCompany3,
+               "#3 Medicaid ID Number" :medicaid_id3,
                "-CHILD 4 INFORMATION-" :child4,
-               "First Name" :child_4_first_name,
-               "Last Name" :child_4_last_name,
-               "D.O.B." :child_4_dob,
-               "Same insurance as child above?" :insSame4,
-               "INSURANCE CHOICE" :insChoose4,
-               "Private Insurance Information" :child4private,
-               "-Subscriber First Name" :subscriberFirstName4,
-               "-Subscriber Last Name" :subscriberLastName4,
-               "-D.O.B" :subscriberDOB4,
-               "-ID Number" :subscriberID4,
-               "-Employer"  :employer4,
-               "-Company" :insurCompany4,
-               "Medicaid ID Number" :medicaid_id4,
-               //RESPONSIBLE PARTY INFO
+               "#4 First Name" :child_4_first_name,
+               "#4 Last Name" :child_4_last_name,
+               "#4 D.O.B." :child_4_dob,
+               "#4 Same insurance as child above?" :insSame4,
+               "#4 INSURANCE CHOICE" :insChoose4,
+               "#4 Private Insurance Information" :child4private,
+               "-#4 Subscriber First Name" :subscriberFirstName4,
+               "-#4 Subscriber Last Name" :subscriberLastName4,
+               "-#4 D.O.B" :subscriberDOB4,
+               "-#4 ID Number" :subscriberID4,
+               "-#4 Employer"  :employer4,
+               "-#4 Company" :insurCompany4,
+               "#4 Medicaid ID Number" :medicaid_id4,
                "Responsible Person First Name" :rp_1_first,
                "Responsible Person Last Name" :rp_1_last,
                "Responsible Person 2 First Name" :rp_2_first,
@@ -863,15 +871,40 @@ $( "#sendIt" ).on('click', function() {
                "Responsible Person 4 First Name" :rp_4_first,
                "Responsible Person 4 Last Name" :rp_4_last,
 
+                "Information complete and accurate" :complete_and_accurate,
+                "Legal guardian for the children listed above" :legal_guardian_for_children_listed,
+                "Give permission to take photos" :give_permission,
+                "Understand the Privacy Act" :understand,
+                "Understand the Office Policies" :understand_office,
+                "Responsible for uncovered fees" :responsible,
+
+                "Full Name" :full_name,
+                "Date Signed" :date_signed,
+
+
 
                _subject:'Insurance Form Submission',
            },
            dataType:"json",
-           success:function() {
-               console.log('success');
-               $('#success_message').show();
-               window.location.href = "http://www.coastalkidsdental.com";
-           }
+           beforeSend: function() {
+             $('#sending_message').show();
+			          // $contact_form.append('<div class="alert alert--loading">Sending message…</div>');
+		            },
+		              success: function(data) {
+                     $('#sending_message').hide();
+			                  $('#success_message').show();
+                          window.location.href = "http://www.coastalkidsdental.com";
+		                      },
+		                        error: function(err) {
+                              $('#sending_message').hide();
+                                 $('#success_message').hide();
+			                          $('#error_message').show();
+		                                }
+          //  success:function(data) {
+          //      console.log('success');
+          //      $('#success_message').show();
+          //      window.location.href = "http://www.coastalkidsdental.com";
+          //  }
 
        });
 
