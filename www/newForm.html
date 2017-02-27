@@ -201,7 +201,7 @@
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                    <input name="Phone Number" placeholder="(843)XXX-XXXX" class="form-control" type="text" required>
+                                    <input name="Phone Number" id="phone" placeholder="(843)XXX-XXXX" class="form-control" type="text" required>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +213,7 @@
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                    <input name="Alt Phone Number" placeholder="(843)XXX-XXXX" class="form-control" type="text">
+                                    <input name="Alt Phone Number" id= "alt_phone" placeholder="(843)XXX-XXXX" class="form-control" type="text">
                                 </div>
                             </div>
                         </div>
@@ -227,13 +227,13 @@
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                    <input name="Email Address" placeholder="Email" id="email"class="form-control" type="text" required>
+                                    <input name="Email Address" placeholder="Email" id="email" class="form-control" type="text" required>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <hr>
-<!--Child 1-->      <input class="hidden" type="text" name="-CHILD 1 INFORMATION-">
+<!--Child 1-->      <input class="hidden" type="text" id="child1" name="-CHILD 1 INFORMATION-">
                     <div class="form-group">
                         <label class="col-md-6" style="margin-left: 10px">I am the Legal Guardian for the children named below:</label>
                     </div>
@@ -245,24 +245,25 @@
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input placeholder="First" class="form-control" type="text" name="Child 1 First Name" id="childName1" required>
+                                    <input placeholder="First" id="child_1_first_name"class="form-control" type="text" name="Child 1 First Name" required>
                                 </div>
                             </div>
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="Child 1 Last Name" id="childLast1" placeholder="Last" class="form-control" type="text" required>
+                                    <input name="Child 1 Last Name" id="child_1_last_name"placeholder="Last" class="form-control" type="text" required>
                                 </div>
                             </div>
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                    <input name="Child 1 DOB" id="Child 1 DOB" placeholder="MM/DD/YYYY" class="form-control" type="text" required>
+                                    <input name="Child 1 DOB" id="child_1_dob" placeholder="MM/DD/YYYY" class="form-control" type="text" required>
                                 </div>
                             </div>
                         </div>
                     </div>
 <!-- Child 1 INSURANCE -->
+                <input class="hidden" type="text" id="child1ins" name="-CHILD 1 INSURANCE INFORMATION-">
                     <div class="form-group">
                         <div class="name-row">
                             <div class="col-md-6 selectContainer">
@@ -270,9 +271,9 @@
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                                     <select id="insChoose" class="form-control selectpicker" name="Insurance Selection 1 = Self Pay, 2 = Private Insurance, 3 = Mediciad" required >
           <option value="" >Select insurance for the child above</option>
-          <option name="Self Pay" value="1">Self Pay</option>
-          <option name="Private Insurance" value="2">Private Insurance</option>
-          <option name="Medicaid" value="3" >Medicaid</option>
+          <option name="Self Pay" value="self_pay">Self Pay</option>
+          <option name="Private Insurance" value="private_insurance">Private Insurance</option>
+          <option name="Medicaid" value="medicaid" >Medicaid</option>
         </select>
                                 </div>
                             </div>
@@ -281,7 +282,7 @@
                           <div style="" class="inputLabs">We provide a 5% discount to patients without insurance.</div>
                         </div>
                     </div>
-
+                    <input class="hidden" type="text" id="child1private" name="-CHILD 1 INSURANCE INFORMATION-">
                         <div id="insForm" class="hide">
                             <div class="col-md-12 inputGroupContainer">
                                 <label name="Commercial/Private Insurance Info" style="margin-top: 10px;">Commercial/Private Insurance</label>
@@ -340,18 +341,19 @@
                                     <div style="" class="inputLabs">Insurance Company Name</div>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                                        <input class="form-control" type="text" name="Insurance Company Name" id="insurComp1" placeholder="Insurance Company Name">
+                                        <input class="form-control" type="text" name="Insurance Company Name" id="insurCompany1" placeholder="Insurance Company Name">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12" style="height: 20px; width: 100%"></div>
                         </div>
+                        <input class="hidden" type="text" id="child1medicaid" name="-CHILD 1 MEDICAID INFORMATION-">
                         <div id="medicaidForm" class="hide">
                             <div class="col-md-6 inputGroupContainer">
                                 <label name ="Medicaid" style="margin-top: 10px;">Medicaid</label>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                                    <input class="form-control" type="text" name="Medicaid ID Number" id="Medicaid ID Number" placeholder="Medicaid ID#">
+                                    <input class="form-control" type="text" name="Medicaid ID Number" id="medicaid_id1" placeholder="Medicaid ID#">
                                 </div>
                             </div>
                         </div>
@@ -363,7 +365,7 @@
                         <div class="col-md-12" style="height: 20px; width: 100%"></div>
   <!-- Child 2-->
                       <div id="childAdditionNew2" style="display: none">
-                         <input class="hidden" type="text" name="-CHILD 2 INFORMATION-">
+                         <input class="hidden" id=""type="text" name="-CHILD 2 INFORMATION-">
                         <div class="form-group">
                           <hr>
                             <label class="col-md-6" style="margin-left: 10px">Child's Name:</label>
@@ -396,8 +398,8 @@
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                                         <select id="insSame3" name="Insurance same as child above: 1 = Yes 2 = No" class="form-control selectpicker">
                    <option value=""> Select Insurance for the child above</option>
-                     <option value="1">This child has same insurance as child above.</option>
-                     <option value="2">This child has a different insurance from the child above.</option>
+                     <option value="yes">This child has same insurance as child above.</option>
+                     <option value="no">This child has a different insurance from the child above.</option>
                   </select>
                                     </div>
                                 </div>
@@ -408,9 +410,9 @@
                                         <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span> -->
                                         <select id="insChoose3" class="form-control selectpicker hide" name="Insurance 2 Selection 1 = Self Pay, 2 = Private Insurance, 3 = Mediciad">
                 <option value="">Select type of insurance</option>
-                  <option value="1">Self Pay</option>
-                  <option value="2">Private Insurance</option>
-                  <option value="3">Medicaid</option>
+                  <option value="self_pay">Self Pay</option>
+                  <option value="private_insurance">Private Insurance</option>
+                  <option value="medicaid">Medicaid</option>
                 </select>
                                     <!-- </div> -->
                                 </div>
@@ -516,10 +518,10 @@
                           <div id="sameInsurance" class="col-md-6 selectContainer">
                               <div class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                  <select id="insSame3" name="Insurance same as child 2 above: 1 = Yes 2 = No" class="form-control selectpicker">
+                                  <select id="insSame4" name="Insurance same as child 2 above: 1 = Yes 2 = No" class="form-control selectpicker">
               <option value=""> Select Insurance for the child above</option>
-              <option value="1">This child has same insurance as child above.</option>
-              <option value="2">This child has a different insurance from the child above.</option>
+              <option value="yes">This child has same insurance as child above.</option>
+              <option value="no">This child has a different insurance from the child above.</option>
               </select>
                               </div>
                           </div>
@@ -527,11 +529,11 @@
                       <div class="name-row">
                           <div id="insuranceNew3" class="col-md-12 selectContainer">
                               <div class="input-group">
-                                  <select id="insChoose3" class="form-control selectpicker hide" name="Insurance 3 Selection 1 = Self Pay, 2 = Private Insurance, 3 = Mediciad">
+                                  <select id="insChoose4" class="form-control selectpicker hide" name="Insurance 3 Selection 1 = Self Pay, 2 = Private Insurance, 3 = Mediciad">
               <option value="">Select type of insurance</option>
-              <option value="1">Self Pay</option>
-              <option value="2">Private Insurance</option>
-              <option value="3">Medicaid</option>
+              <option value="self_pay">Self Pay</option>
+              <option value="private_insurance">Private Insurance</option>
+              <option value="medicaid">Medicaid</option>
               </select>
                               </div>
                           </div>
@@ -585,7 +587,7 @@
                               </div>
                               <div class="col-md-12" style="height: 20px; width: 100%"></div>
                           </div>
-                          <div id="medicaidForm4" class="name-row col-md-6 hide">
+                          <div id="medicaidForm5" class="name-row col-md-6 hide">
                               <label style="margin-top: 10px;">Medicaid</label>
                               <div class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
@@ -633,10 +635,10 @@
                           <div id="sameInsurance" class="col-md-6 selectContainer">
                               <div class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                  <select id="insSame4" name="Insurance same as child 3 above: 1 = Yes 2 = No" class="form-control selectpicker">
+                                  <select id="insSame5" name="Insurance same as child 3 above: 1 = Yes 2 = No" class="form-control selectpicker">
               <option value=""> Select Insurance for the child above</option>
-              <option value="1">This child has same insurance as child above.</option>
-              <option value="2">This child has a different insurance from the child above.</option>
+              <option value="yes">This child has same insurance as child above.</option>
+              <option value="no">This child has a different insurance from the child above.</option>
               </select>
                               </div>
                           </div>
@@ -644,11 +646,11 @@
                       <div class="name-row">
                           <div id="insuranceNew4" class="col-md-12 selectContainer">
                               <div class="input-group">
-                                  <select id="insChoose4" class="form-control selectpicker hide" name="Insurance 4 Selection 1 = Self Pay, 2 = Private Insurance, 3 = Mediciad">
+                                  <select id="insChoose5" class="form-control selectpicker hide" name="Insurance 4 Selection 1 = Self Pay, 2 = Private Insurance, 3 = Mediciad">
               <option value="">Select type of insurance</option>
-              <option value="1">Self Pay</option>
-              <option value="2">Private Insurance</option>
-              <option value="3">Medicaid</option>
+              <option value="self_pay">Self Pay</option>
+              <option value="private_insurance">Private Insurance</option>
+              <option value="medicaid">Medicaid</option>
               </select>
                               </div>
                           </div>
@@ -729,13 +731,13 @@
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="Responsible Party 1 First Name" placeholder="First" class="form-control" type="text">
+                                    <input name="Responsible Party 1 First Name" id="rp_1_first" placeholder="First" class="form-control" type="text">
                                 </div>
                             </div>
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="Responsible Party 1 Last Name" placeholder="Last" class="form-control" type="text">
+                                    <input name="Responsible Party 1 Last Name" id="rp_1_last" placeholder="Last" class="form-control" type="text">
                                 </div>
                             </div>
                         </div>
@@ -754,13 +756,13 @@
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="Responsible Party 2 First Name" placeholder="First" class="form-control" type="text" >
+                                    <input name="Responsible Party 2 First Name" id="rp_2_first" placeholder="First" class="form-control" type="text" >
                                 </div>
                             </div>
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="Responsible Party 2 Last Name" placeholder="Last" class="form-control" type="text" >
+                                    <input name="Responsible Party 2 Last Name" id="rp_2_last" placeholder="Last" class="form-control" type="text" >
                                 </div>
                             </div>
                         </div>
@@ -780,13 +782,13 @@
                           <div class="col-md-5 inputGroupContainer">
                               <div class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                  <input name="Responsible Party 3 First Name" placeholder="First" class="form-control" type="text" >
+                                  <input name="Responsible Party 3 First Name" id="rp_3_first" placeholder="First" class="form-control" type="text" >
                               </div>
                           </div>
                           <div class="col-md-5 inputGroupContainer">
                               <div class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                  <input name="Responsible Party 3 Last Name" placeholder="Last" class="form-control" type="text" >
+                                  <input name="Responsible Party 3 Last Name" id="rp_3_last" placeholder="Last" class="form-control" type="text" >
                               </div>
                           </div>
                       </div>
@@ -806,13 +808,13 @@
                         <div class="col-md-5 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="Responsible Party 4 First Name" placeholder="First" class="form-control" type="text" >
+                                <input name="Responsible Party 4 First Name" id="rp_4_first" placeholder="First" class="form-control" type="text" >
                             </div>
                         </div>
                         <div class="col-md-5 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="Responsible Party 4 Last Name" placeholder="Last" class="form-control" type="text" >
+                                <input name="Responsible Party 4 Last Name" id="rp_4_last" placeholder="Last" class="form-control" type="text" >
                             </div>
                         </div>
                     </div>

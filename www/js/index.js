@@ -20,11 +20,11 @@ $(document).ready(function(){
   $("#insuranceNew2").click(getInsurance2);
 
   $('#insSame3').change(function() {
-    if($('#insSame3').val() == '1'){
+    if($('#insSame3').val() == 'yes'){
       console.log("1");
       $("#insChoose3").addClass("hide")
     }
-    if($('#insSame3').val() == '2'){
+    if($('#insSame3').val() == 'no'){
       console.log("2");
       // $("#insForm2").removeClass("hide");
       $("#insChoose3").removeClass("hide")
@@ -32,20 +32,20 @@ $(document).ready(function(){
   });
 
   $('#insChoose3').change(function() {
-    if($('#insChoose3').val() == '1'){
+    if($('#insChoose3').val() == 'self_pay'){
       console.log("1 3");
       $("#payForm4").removeClass("hide");
       $("#insForm4").addClass("hide");
       $("#medicaidForm4").addClass("hide");
     }
-    if($('#insChoose3').val() == '2'){
+    if($('#insChoose3').val() == 'private_insurance'){
       console.log("2 3");
       $("#payForm4").addClass("hide");
       $("#insForm4").removeClass("hide");
       $("#medicaidForm4").addClass("hide");
     }
 
-    if($('#insChoose3').val() == '3'){
+    if($('#insChoose3').val() == 'medicaid'){
       console.log("3");
       $("#payForm4").addClass("hide");
       $("#insForm4").addClass("hide");
@@ -68,13 +68,66 @@ $(document).ready(function(){
   }
 
   $('#insSame4').change(function(){
-    if($('#insSame4').val() == '1'){
+    if($('#insSame4').val() == 'yes'){
       console.log("1");
     }
-    if($('#insSame4').val() == '2'){
+    if($('#insSame4').val() == 'no'){
+      console.log("2");
+      // $("#insForm2").removeClass("hide");
+      $("#insChoose4").removeClass("hide")
+    }
+  });
+  $('#insChoose4').change(function() {
+    if($('#insChoose4').val() == 'self_pay'){
+      console.log("1 3");
+      $("#payForm5").removeClass("hide");
+      $("#insForm5").addClass("hide");
+      $("#medicaidForm5").addClass("hide");
+    }
+    if($('#insChoose4').val() == 'private_insurance'){
+      console.log("2 3");
+      $("#payForm5").addClass("hide");
+      $("#insForm5").removeClass("hide");
+      $("#medicaidForm5").addClass("hide");
+    }
+
+    if($('#insChoose4').val() == 'medicaid'){
+      console.log("3");
+      $("#payForm5").addClass("hide");
+      $("#insForm5").addClass("hide");
+      $("#medicaidForm5").removeClass("hide");
+    }
+  });
+
+  $('#insSame5').change(function(){
+    if($('#insSame5').val() == 'yes'){
+      console.log("1");
+    }
+    if($('#insSame5').val() == 'no'){
       console.log("2");
       // $("#insForm2").removeClass("hide");
       $("#insChoose5").removeClass("hide")
+    }
+  });
+  $('#insChoose5').change(function() {
+    if($('#insChoose5').val() == 'self_pay'){
+      console.log("1 3");
+      $("#payForm6").removeClass("hide");
+      $("#insForm6").addClass("hide");
+      $("#medicaidForm6").addClass("hide");
+    }
+    if($('#insChoose5').val() == 'private_insurance'){
+      console.log("2 3");
+      $("#payForm6").addClass("hide");
+      $("#insForm6").removeClass("hide");
+      $("#medicaidForm6").addClass("hide");
+    }
+
+    if($('#insChoose5').val() == 'medicaid'){
+      console.log("3");
+      $("#payForm6").addClass("hide");
+      $("#insForm6").addClass("hide");
+      $("#medicaidForm6").removeClass("hide");
     }
   });
 
@@ -95,10 +148,10 @@ $(document).ready(function(){
   $("#insuranceNew10").click(getInsurance10);
 
   $('#insSame10').change(function(){
-    if($('#insSame10').val() == '1'){
+    if($('#insSame10').val() == 'yes'){
       console.log("1");
     }
-    if($('#insSame10').val() == '2'){
+    if($('#insSame10').val() == 'no'){
       console.log("2");
       // $("#insForm2").removeClass("hide");
       $("#insChoose10").removeClass("hide")
@@ -127,10 +180,10 @@ $(document).ready(function(){
   $("#insuranceNew11").click(getInsurance11);
 
   $('#insSame11').change(function(){
-    if($('#insSame11').val() == '1'){
+    if($('#insSame11').val() == 'yes'){
       console.log("1");
     }
-    if($('#insSame11').val() == '2'){
+    if($('#insSame11').val() == 'no'){
       console.log("2");
       // $("#insForm2").removeClass("hide");
       $("#insChoose11").removeClass("hide")
@@ -138,17 +191,17 @@ $(document).ready(function(){
   });
 
   $('#insChoose11').change(function(){
-      if($('#insChoose11').val() == '1'){
+      if($('#insChoose11').val() == 'self_pay'){
         console.log("1 4");
         $("#insForm11").addClass("hide");
         $("#medicaidForm11").addClass("hide");
     }
-    if($('#insChoose11').val() == '2'){
+    if($('#insChoose11').val() == 'private_insurance'){
       console.log("2 4");
        $("#insForm11").removeClass("hide");
      }
 
-    if($('#insChoose11').val() == '3'){
+    if($('#insChoose11').val() == 'medicaid'){
       console.log("4");
       $("#insForm11").addClass("hide");
       $("#medicaidForm11").removeClass("hide");
@@ -180,10 +233,10 @@ $(document).ready(function(){
   $("#insuranceNew12").click(getInsurance12);
 
   $('#insSame12').change(function(){
-    if($('#insSame12').val() == '1') {
+    if($('#insSame12').val() == 'yes') {
       console.log("1");
     }
-    if($('#insSame12').val() == '2') {
+    if($('#insSame12').val() == 'no') {
       console.log("2");
       // $("#insForm2").removeClass("hide");
       $("#insChoose12").removeClass("hide")
@@ -191,16 +244,16 @@ $(document).ready(function(){
   });
 
   $('#insChoose12').change(function(){
-    if($('#insChoose12').val() == '1'){
+    if($('#insChoose12').val() == 'self_pay'){
       console.log("1 4");
       $("#insForm12").addClass("hide");
       $("#medicaidForm12").addClass("hide");
     }
-    if($('#insChoose12').val() == '2'){
+    if($('#insChoose12').val() == 'private_insurance'){
       console.log("2 4");
       $("#insForm12").removeClass("hide");
     }
-    if($('#insChoose12').val() == '3'){
+    if($('#insChoose12').val() == 'medicaid'){
       console.log("4");
       $("#insForm12").addClass("hide");
       $("#medicaidForm12").removeClass("hide");
@@ -234,10 +287,10 @@ function getInsurance13() {
 $("#insuranceNew13").click(getInsurance13);
 
 $('#insSame13').change(function(){
-    if($('#insSame13').val() == '1'){
+    if($('#insSame13').val() == 'yes'){
       console.log("1");
   }
-  if($('#insSame13').val() == '2'){
+  if($('#insSame13').val() == 'no'){
     console.log("2");
     // $("#insForm2").removeClass("hide");
     $("#insChoose13").removeClass("hide")
@@ -245,18 +298,18 @@ $('#insSame13').change(function(){
 });
 
 $('#insChoose13').change(function(){
-    if($('#insChoose13').val() == '1'){
+    if($('#insChoose13').val() == 'self_pay'){
       console.log("1 4");
       $("#insForm13").addClass("hide");
       $("#medicaidForm13").addClass("hide");
   }
-  if($('#insChoose13').val() == '2'){
+  if($('#insChoose13').val() == 'private_insurance'){
     console.log("2 4");
      $("#insForm13").removeClass("hide");
 
 }
 
-if($('#insChoose13').val() == '3'){
+if($('#insChoose13').val() == 'medicaid'){
   console.log("4");
   $("#insForm13").addClass("hide");
   $("#medicaidForm13").removeClass("hide");
@@ -292,10 +345,10 @@ function getInsurance14() {
 $("#insuranceNew14").click(getInsurance14);
 
 $('#insSame14').change(function(){
-    if($('#insSame14').val() == '1'){
+    if($('#insSame14').val() == 'yes'){
       console.log("1");
   }
-  if($('#insSame14').val() == '2'){
+  if($('#insSame14').val() == 'no'){
     console.log("2");
     // $("#insForm2").removeClass("hide");
     $("#insChoose14").removeClass("hide")
@@ -303,18 +356,18 @@ $('#insSame14').change(function(){
 });
 
 $('#insChoose14').change(function(){
-    if($('#insChoose14').val() == '1'){
+    if($('#insChoose14').val() == 'self_pay'){
       console.log("1 4");
       $("#insForm14").addClass("hide");
       $("#medicaidForm14").addClass("hide");
   }
-  if($('#insChoose14').val() == '2'){
+  if($('#insChoose14').val() == 'private_insurance'){
     console.log("2 4");
      $("#insForm14").removeClass("hide");
 
 }
 
-if($('#insChoose14').val() == '3'){
+if($('#insChoose14').val() == 'medicaid'){
   console.log("4");
   $("#insForm14").addClass("hide");
   $("#medicaidForm14").removeClass("hide");
@@ -350,10 +403,10 @@ function getInsurance15() {
 $("#insuranceNew15").click(getInsurance15);
 
 $('#insSame15').change(function(){
-    if($('#insSame15').val() == '1'){
+    if($('#insSame15').val() == 'yes'){
       console.log("1");
   }
-  if($('#insSame15').val() == '2'){
+  if($('#insSame15').val() == 'no'){
     console.log("2");
     // $("#insForm2").removeClass("hide");
     $("#insChoose15").removeClass("hide")
@@ -361,18 +414,18 @@ $('#insSame15').change(function(){
 });
 
 $('#insChoose15').change(function(){
-    if($('#insChoose15').val() == '1'){
+    if($('#insChoose15').val() == 'self_pay'){
       console.log("1 4");
       $("#insForm15").addClass("hide");
       $("#medicaidForm15").addClass("hide");
   }
-  if($('#insChoose15').val() == '2'){
+  if($('#insChoose15').val() == 'private_insurance'){
     console.log("2 4");
      $("#insForm15").removeClass("hide");
 
 }
 
-if($('#insChoose15').val() == '3'){
+if($('#insChoose15').val() == 'medicaid'){
   console.log("4");
   $("#insForm15").addClass("hide");
   $("#medicaidForm15").removeClass("hide");
@@ -408,10 +461,10 @@ function getInsurance16() {
 $("#insuranceNew16").click(getInsurance16);
 
 $('#insSame16').change(function(){
-    if($('#insSame16').val() == '1'){
+    if($('#insSame16').val() == 'yes'){
       console.log("1");
   }
-  if($('#insSame16').val() == '2'){
+  if($('#insSame16').val() == 'no'){
     console.log("2");
     // $("#insForm2").removeClass("hide");
     $("#insChoose16").removeClass("hide")
@@ -419,18 +472,18 @@ $('#insSame16').change(function(){
 });
 
 $('#insChoose16').change(function(){
-    if($('#insChoose16').val() == '1'){
+    if($('#insChoose16').val() == 'self_pay'){
       console.log("1 4");
       $("#insForm16").addClass("hide");
       $("#medicaidForm16").addClass("hide");
   }
-  if($('#insChoose16').val() == '2'){
+  if($('#insChoose16').val() == 'private_insurance'){
     console.log("2 4");
      $("#insForm16").removeClass("hide");
 
 }
 
-if($('#insChoose16').val() == '3'){
+if($('#insChoose16').val() == 'medicaid'){
   console.log("4");
   $("#insForm16").addClass("hide");
   $("#medicaidForm16").removeClass("hide");
@@ -447,19 +500,19 @@ if($('#insChoose16').val() == '3'){
 
 $("#insuranceNew3").click(getInsurance3);
 $('#insChoose4').change(function(){
-    if($('#insChoose4').val() == '1'){
+    if($('#insChoose4').val() == 'self_pay'){
       console.log("1 4");
       $("#payForm4").removeClass("hide");
       $("#insForm4").addClass("hide");
       $("#medicaidForm4").addClass("hide");
   }
-  if($('#insChoose4').val() == '2'){
+  if($('#insChoose4').val() == 'private_insurance'){
     console.log("2 4");
      $("#insForm4").removeClass("hide");
      $("#payForm4").addClass("hide");
 }
 
-if($('#insChoose4').val() == '3'){
+if($('#insChoose4').val() == '3medicaid'){
   console.log("4");
   $("#insForm4").addClass("hide");
   $("#medicaidForm4").removeClass("hide");
@@ -470,18 +523,18 @@ if($('#insChoose4').val() == '3'){
 });
 
 $('#insChoose5').change(function(){
-    if($('#insChoose5').val() == '1'){
+    if($('#insChoose5').val() == 'self_pay'){
       console.log("1 4");
       $("#insForm5").addClass("hide");
       $("#medicaidForm5").addClass("hide");
   }
-  if($('#insChoose5').val() == '2'){
+  if($('#insChoose5').val() == 'private_insurance'){
     console.log("2 4");
      $("#insForm5").removeClass("hide");
 
 }
 
-if($('#insChoose5').val() == '3'){
+if($('#insChoose5').val() == 'medicaid'){
   console.log("4");
   $("#insForm5").addClass("hide");
   $("#medicaidForm5").removeClass("hide");
@@ -492,12 +545,12 @@ if($('#insChoose5').val() == '3'){
 
 
 $('#insChoose10').change(function(){
-    if($('#insChoose10').val() == '1'){
+    if($('#insChoose10').val() == 'self_pay'){
       console.log("1 4");
       $("#insForm10").addClass("hide");
       $("#medicaidForm10").addClass("hide");
   }
-  if($('#insChoose10').val() == '2'){
+  if($('#insChoose10').val() == 'private_insurance'){
     console.log("2 4");
      $("#insForm10").removeClass("hide");
 
@@ -516,19 +569,19 @@ if($('#insChoose10').val() == '3'){
 
 
 $('#insChoose').change(function(){
-    if($('#insChoose').val() == '1'){
+    if($('#insChoose').val() == 'self_pay'){
       console.log("1");
       $("#payForm").removeClass("hide");
         $("#insForm").addClass("hide");
         $("#medicaidForm").addClass("hide");
   }
-  if($('#insChoose').val() == '2'){
+  if($('#insChoose').val() == 'private_insurance'){
     console.log("2");
     $("#payForm").addClass("hide");
     $("#insForm").removeClass("hide");
     $("#medicaidForm").addClass("hide");
 }
-if($('#insChoose').val() == '3'){
+if($('#insChoose').val() == 'medicaid'){
   console.log("3");
   $("#payForm").addClass("hide");
   $("#insForm").addClass("hide");
@@ -605,7 +658,7 @@ $( "#addAnotherInd4" ).click(function() {
 });
 
 $( "#sendIt" ).on('click', function() {
-  console.log("Email Sent");
+  console.log("Sending Email");
   $( "#success_message" ).toggle();
  $("#success_message").removeClass("hide")
 });
@@ -641,6 +694,7 @@ $( "#sendIt" ).on('click', function() {
 
   });
 
+
   $('#contact_form').on('submit', function(e) {
        e.preventDefault();
        var legal_guardian = $('#legal_guardian').val();
@@ -652,6 +706,78 @@ $( "#sendIt" ).on('click', function() {
        var city = $('#city').val();
        var state = $('#state').val();
        var zip = $('#zip').val();
+       var phone = $('#phone').val();
+       var alt_phone = $('#alt_phone').val();
+       var child1 = $('#child1').val();
+       var child_1_first_name = $('#child_1_first_name').val();
+       var child_1_last_name = $('#child_1_last_name').val();
+       var child_1_dob = $('#child_1_dob').val();
+       var insChoose = $('#insChoose').val();
+       var child1private = $('#child1private').val();
+       var subscriberFirstName1 = $('#subscriberFirstName1').val();
+       var subscriberLastName1 = $('#subscriberLastName1').val();
+       var subscriberDOB1 = $("#subscriberDOB1").val();
+       var subscriberID1 = $("#subscriberID1").val();
+       var employer1 = $("#employer1").val();
+       var insurCompany1 = $("#insurCompany1").val();
+       var child1medicaid = $("#child1medicaid").val();
+       var medicaid_id1 = $("#medicaid_id1").val();
+       //Child 2
+       var child2 = $('#child2').val();
+       var child_2_first_name = $('#child_2_first_name').val();
+       var child_2_last_name = $('#child_2_last_name').val();
+       var child_2_dob = $('#child_2_dob').val();
+       var insSame3 = $('#insSame3').val();
+       var insChoose3 = $('#insChoose3').val();
+       var child2private = $('#child2private').val();
+       var subscriberFirstName2 = $('#subscriberFirstName2').val();
+       var subscriberLastName2 = $('#subscriberLastName2').val();
+       var subscriberDOB2 = $("#subscriberDOB2").val();
+       var subscriberID2 = $("#subscriberID2").val();
+       var employer2 = $("#employer2").val();
+       var insurCompany2 = $("#insurCompany2").val();
+       var medicaid_id2 = $("#medicaid_id2").val();
+       //Child 3
+       var child3 = $('#child3').val();
+       var child_3_first_name = $('#child_3_first_name').val();
+       var child_3_last_name = $('#child_3_last_name').val();
+       var child_3_dob = $('#child_3_dob').val();
+       var insSame4 = $('#insSame4').val();
+       var insChoose4 = $('#insChoose4').val();
+       var child3private = $('#child3private').val();
+       var subscriberFirstName3 = $('#subscriberFirstName3').val();
+       var subscriberLastName3 = $('#subscriberLastName3').val();
+       var subscriberDOB3 = $("#subscriberDOB3").val();
+       var subscriberID3 = $("#subscriberID3").val();
+       var employer3 = $("#employer3").val();
+       var insurCompany3 = $("#insurCompany3").val();
+       var medicaid_id3 = $("#medicaid_id3").val();
+       //Child 4
+       var child4 = $('#child4').val();
+       var child_4_first_name = $('#child_4_first_name').val();
+       var child_4_last_name = $('#child_4_last_name').val();
+       var child_4_dob = $('#child_4_dob').val();
+       var insSame5 = $('#insSame5').val();
+       var insChoose5 = $('#insChoose5').val();
+       var child4private = $('#child4private').val();
+       var subscriberFirstName4 = $('#subscriberFirstName4').val();
+       var subscriberLastName4 = $('#subscriberLastName4').val();
+       var subscriberDOB4 = $("#subscriberDOB4").val();
+       var subscriberID4 = $("#subscriberID4").val();
+       var employer4 = $("#employer4").val();
+       var insurCompany4 = $("#insurCompany4").val();
+       var medicaid_id4 = $("#medicaid_id4").val();
+       //Responsible Parties
+       var rp_1_first = $("#rp_1_first").val();
+       var rp_1_last = $("#rp_1_last").val();
+       var rp_2_first = $("#rp_2_first").val();
+       var rp_2_last = $("#rp_2_last").val();
+       var rp_3_first = $("#rp_3_first").val();
+       var rp_3_last = $("#rp_3_last").val();
+       var rp_4_first = $("#rp_4_first").val();
+       var rp_4_last = $("#rp_4_last").val();
+
+
        //send to formspree
        $.ajax({
            url:'https://formspree.io/hosea@obviouslee.com',
@@ -666,7 +792,49 @@ $( "#sendIt" ).on('click', function() {
                "City" :city,
                "State" :state,
                "Zip Code" :zip,
-
+               "Phone" :phone,
+               "Alt. Phone" :alt_phone,
+               "-CHILD 1 INFORMATION-" :child1,
+               "First Name" :child_1_first_name,
+               "Last Name" :child_1_last_name,
+               "D.O.B." :child_1_dob,
+               "INSURANCE CHOICE" :insChoose,
+               "Private Insurance Information" :child1private,
+               "-Subscriber First Name" :subscriberFirstName1,
+               "-Subscriber Last Name" :subscriberLastName1,
+               "-D.O.B" :subscriberDOB1,
+               "-ID Number" :subscriberID1,
+               "-Employer"  :employer1,
+               "-Company" :insurCompany1,
+               "Medicaid ID Number" :medicaid_id1,
+               "-CHILD 2 INFORMATION-" :child2,
+               "First Name" :child_2_first_name,
+               "Last Name" :child_2_last_name,
+               "D.O.B." :child_2_dob,
+               "Same insurance as child above?" :insSame3,
+               "INSURANCE CHOICE" :insChoose3,
+               "Private Insurance Information" :child2private,
+               "-Subscriber First Name" :subscriberFirstName2,
+               "-Subscriber Last Name" :subscriberLastName2,
+               "-D.O.B" :subscriberDOB2,
+               "-ID Number" :subscriberID2,
+               "-Employer"  :employer2,
+               "-Company" :insurCompany2,
+               "Medicaid ID Number" :medicaid_id2,
+               "-CHILD 3 INFORMATION-" :child3,
+               "First Name" :child_3_first_name,
+               "Last Name" :child_3_last_name,
+               "D.O.B." :child_3_dob,
+               "Same insurance as child above?" :insSame3,
+               "INSURANCE CHOICE" :insChoose3,
+               "Private Insurance Information" :child3private,
+               "-Subscriber First Name" :subscriberFirstName3,
+               "-Subscriber Last Name" :subscriberLastName3,
+               "-D.O.B" :subscriberDOB3,
+               "-ID Number" :subscriberID3,
+               "-Employer"  :employer3,
+               "-Company" :insurCompany3,
+               "Medicaid ID Number" :medicaid_id3,
 
 
                _subject:'Contact Form Submission',
