@@ -27,7 +27,7 @@
 <body>
     <div class="container">
 
-        <form class="well form-horizontal form-validation" id="contact_form">
+        <form class="well form-horizontal form-validation" id="contact_form" action="https://formspree.io/emily@obviouslee.com" method="post">
             <fieldset>
 
                 <div id="google_translate_element" style=""></div>
@@ -932,11 +932,11 @@
 
 
                     <!--  Messagesß -->
-                    <div class="alert alert--loading" role="alert" id="sending_message" style="display: none">Sending message…<i class="glyphicon glyphicon-refresh"></i> </div>
+                    <!-- <div class="alert alert--loading" role="alert" id="sending_message" style="display: none">Sending message…<i class="glyphicon glyphicon-refresh"></i> </div> -->
                     <div class="alert alert-success" role="alert" id="success_message" style="display: none">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
-                    <div class="alert alert--error" role="alert" id="error_message" style="display: none">Ops, there was an error.<i class="glyphicon glyphicon-warning-sign"></i></div>
+                    <!-- <div class="alert alert--error" role="alert" id="error_message" style="display: none">Ops, there was an error.<i class="glyphicon glyphicon-warning-sign"></i></div> -->
                     <!-- <input type="hidden" name="_subject" value="New contact form submission" /> -->
-                    <!-- <input type="hidden" id="redirect" name="_next" value="http://coastalkidsdental.com" /> -->
+                    <input type="hidden" id="redirect" name="_next" value="http://coastalkidsdental.com" />
 
                     <!--Honeypot for catching bots-->
                     <input type="text" name="_gotcha" style="display:none" />
@@ -947,7 +947,7 @@
                             <div class="contact-row">
                                 <!-- <div class="g-recaptcha" data-sitekey="6LdYSCcTAAAAAPVaXQ2gdmDeTe3w_PgqNTGT47_R"></div>
                                 <div class="col-md-12" style="padding-bottom: 20px"></div> -->
-                                <button id="sendIt" value="Send" type="submit" class="btn btn-warning" style="height:35px; width:200px">Send <span class="glyphicon glyphicon-send"></span></button>
+                                <button value="Send" type="submit" class="btn btn-warning" style="height:35px; width:200px">Send <span class="glyphicon glyphicon-send"></span></button>
 
                             </div>
                         </div>
