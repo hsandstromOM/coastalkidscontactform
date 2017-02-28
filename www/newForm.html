@@ -27,7 +27,7 @@
 <body>
     <div class="container">
 
-        <form class="well form-horizontal form-validation" id="contact_form" action="https://formspree.io/emily@obviouslee.com" method="post">
+        <form class="well form-horizontal form-validation" id="contact_form" action="">
             <fieldset>
 
                 <div id="google_translate_element" style=""></div>
@@ -185,7 +185,7 @@
                             <div class="col-md-3 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                    <input name="Zip Code" placeholder="Zip Code" id="zip" class="form-control" type="text" required>
+                                    <input name="Zip Code" placeholder="Zip Code ex.123456" id="zip" class="form-control" type="text" pattern="/^\d{5}$/" required>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                    <input name="Phone Number" id="phone" placeholder="(843)XXX-XXXX" class="form-control" type="text" required>
+                                    <input name="Phone Number" id="phone" placeholder="(843)XXX-XXXX" class="form-control" type="tel"  pattern="\(\d\d\d\) ?\d\d\d-\d\d\d\d" title="(843) XXX-XXXX"  required>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +213,7 @@
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                    <input name="Alt Phone Number" id= "alt_phone" placeholder="(843)XXX-XXXX" class="form-control" type="text">
+                                    <input name="Alt Phone Number" id= "alt_phone" placeholder="(843)XXX-XXXX" class="form-control" type="tel" pattern="\(\d\d\d\) ?\d\d\d-\d\d\d\d" title="(843) XXX-XXXX" >
                                 </div>
                             </div>
                         </div>
@@ -227,7 +227,7 @@
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                    <input name="Email Address" placeholder="Email" id="email" class="form-control" type="text" required>
+                                    <input name="Email Address" placeholder="Email" id="email" class="form-control" type="email" required>
                                 </div>
                             </div>
                         </div>
@@ -257,7 +257,7 @@
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                    <input name="Child 1 DOB" id="child_1_dob" placeholder="MM/DD/YYYY" class="form-control" type="text" required>
+                                    <input name="Child 1 DOB" id="child_1_dob" placeholder="MM/DD/YYYY" class="form-control" type="date" required>
                                 </div>
                             </div>
                         </div>
@@ -320,7 +320,7 @@
                                     <div style="" class="inputLabs">Subscriber DOB:</div>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                        <input class="form-control" type="text" name="Subscriber DOB" id="subscriberDOB1" placeholder="MM/DD/YYYY">
+                                        <input class="form-control" type="date" name="Subscriber DOB" id="subscriberDOB1" placeholder="MM/DD/YYYY">
                                     </div>
                                 </div>
                                 <div class="col-md-4 inputGroupContainer">
@@ -387,7 +387,7 @@
                                 <div class="col-md-4 inputGroupContainer">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                        <input name="Child 2 DOB" id="child_2_dob" placeholder="MM/DD/YYYY" class="form-control" type="text" >
+                                        <input name="Child 2 DOB" id="child_2_dob" placeholder="MM/DD/YYYY" class="form-control" type="date" >
                                     </div>
                                 </div>
                             </div>
@@ -441,7 +441,7 @@
                                         <div style="" class="inputLabs">Subscriber DOB:</div>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                            <input class="form-control" type="text" name="Subscriber DOB 2" id="subscriberDOB2" placeholder="MM/DD/YYYY">
+                                            <input class="form-control" type="date" name="Subscriber DOB 2" id="subscriberDOB2" placeholder="MM/DD/YYYY">
                                         </div>
                                     </div>
                                     <div class="col-md-4 inputGroupContainer">
@@ -509,7 +509,7 @@
                           <div class="col-md-4 inputGroupContainer">
                               <div class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                  <input name="Child 3 DOB" id="child_3_dob" placeholder="MM/DD/YYYY" class="form-control" type="text">
+                                  <input name="Child 3 DOB" id="child_3_dob" placeholder="MM/DD/YYYY" class="form-control" type="date">
                               </div>
                           </div>
                       </div>
@@ -561,7 +561,7 @@
                                   <div style="" class="inputLabs">Subscriber DOB:</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                      <input class="form-control" type="text" name="Subscriber DOB 3" id="subscriberDOB3" placeholder="MM/DD/YYYY">
+                                      <input class="form-control" type="date" name="Subscriber DOB 3" id="subscriberDOB3" placeholder="MM/DD/YYYY">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
@@ -626,7 +626,7 @@
                           <div class="col-md-4 inputGroupContainer">
                               <div class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                  <input name="Child 4 DOB" id="childDOB4" placeholder="MM/DD/YYYY" class="form-control" type="text">
+                                  <input name="Child 4 DOB" id="childDOB4" placeholder="MM/DD/YYYY" class="form-control" type="date">
                               </div>
                           </div>
                       </div>
@@ -678,7 +678,7 @@
                                   <div style="" class="inputLabs">Subscriber DOB:</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                      <input class="form-control" type="text" name="Subscriber DOB 4" id="subscriberDOB4" placeholder="MM/DD/YYYY">
+                                      <input class="form-control" type="date" name="Subscriber DOB 4" id="subscriberDOB4" placeholder="MM/DD/YYYY">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
@@ -923,7 +923,7 @@
                             <div class="col-md-3 inputGroupContainer">Date:
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                    <input name="Date completed" id="date_signed" placeholder="MM/DD/YYYY" class="form-control" type="text" required>
+                                    <input name="Date completed" id="date_signed" placeholder="MM/DD/YYYY" class="form-control" type="date" required>
                                 </div>
                             </div>
                         </div>
@@ -936,7 +936,7 @@
                     <div class="alert alert-success" role="alert" id="success_message" style="display: none">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
                     <!-- <div class="alert alert--error" role="alert" id="error_message" style="display: none">Ops, there was an error.<i class="glyphicon glyphicon-warning-sign"></i></div> -->
                     <!-- <input type="hidden" name="_subject" value="New contact form submission" /> -->
-                    <input type="hidden" id="redirect" name="_next" value="http://coastalkidsdental.com" />
+                    <!-- <input type="hidden" id="redirect" name="_next" value="http://coastalkidsdental.com" /> -->
 
                     <!--Honeypot for catching bots-->
                     <input type="text" name="_gotcha" style="display:none" />
@@ -947,7 +947,7 @@
                             <div class="contact-row">
                                 <!-- <div class="g-recaptcha" data-sitekey="6LdYSCcTAAAAAPVaXQ2gdmDeTe3w_PgqNTGT47_R"></div>
                                 <div class="col-md-12" style="padding-bottom: 20px"></div> -->
-                                <button value="Send" type="submit" class="btn btn-warning" style="height:35px; width:200px">Send <span class="glyphicon glyphicon-send"></span></button>
+                                <button value="Send" type="submit" class="submit btin btn-warning" style="height:35px; width:200px">Send <span class="glyphicon glyphicon-send"></span></button>
 
                             </div>
                         </div>

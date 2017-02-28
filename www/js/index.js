@@ -695,8 +695,8 @@ $( "#addAnotherInd4" ).click(function() {
   });
 
 var $contactForm = $('#contact_form');
-  $('#contactForm').on('submit', function(e) {
-    var $submit = $('input:submit', $contactForm);
+  $('#contact_form').on('submit', function(e) {
+    // var $submit = $('input:submit', $contactForm);
 	  // var defaultSubmitText = $submit.val();
        e.preventDefault();
 
@@ -795,7 +795,7 @@ var $contactForm = $('#contact_form');
 
        //send to formspree
        $.ajax({
-           url:'https://formspree.io/emily@obviouslee.com',
+           url:'//formspree.io/emily@obviouslee.com',
            method:'POST',
            data:{
                "Legal Guardian First Name":legal_guardian,
@@ -889,28 +889,28 @@ var $contactForm = $('#contact_form');
            },
            dataType:"json",
 
-		beforeSend: function() {
-			//$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-			$submit.attr('disabled', true).val('Sending message…');
-		},
+		// beforeSend: function() {
+		// 	//$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+		// 	$submit.attr('disabled', true).val('Sending message…');
+		// },
 		success: function(data) {
 			//$contactForm.append('<div class="alert alert--success">Message sent!</div>');
-			$submit.val('Message sent!');
+			$('#success_message').show();
       // console.log("Message Sent!");
 			setTimeout(function() {
 				//$('.alert--success').remove();
-				$submit.attr('disabled', false).val(defaultSubmitText);
+			window.location.href = "http://www.coastalkidsdental.com";
 			}, 5000);
 		},
-		error: function(err) {
-			//$contactForm.find('.alert--loading').hide();
-			//$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-			$submit.val('Ops, there was an error.');
-			setTimeout(function() {
-				//$('.alert--error').remove();
-				$submit.attr('disabled', false).val(defaultSubmitText);
-			}, 5000);
-		}
+		// error: function(err) {
+		// 	//$contactForm.find('.alert--loading').hide();
+		// 	//$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+		// 	$submit.val('Ops, there was an error.');
+		// 	setTimeout(function() {
+		// 		//$('.alert--error').remove();
+		// 		$submit.attr('disabled', false).val(defaultSubmitText);
+		// 	}, 5000);
+		// }
 
           //  success:function(data) {
           //      console.log('success');
