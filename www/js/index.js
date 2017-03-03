@@ -693,8 +693,52 @@ $( "#addAnotherInd4" ).click(function() {
     patient.timePreference = timePreference
 
   });
+  var $input = $("input[name*='req']")
+  var $selector = $("select")
+  var $checkbox = $("input:checked"),
+    $send = $('#send');
 
-var $contactForm = $('#contact_form');
+    $send.attr('disabled', true);
+    $input.keyup(function() {
+    var trigger = false;
+    $input.selector.checkbox.each(function() {
+        if (!$(this).val()) {
+            trigger = true;
+        }
+    });
+    trigger ? $send.attr('disabled', true) : $send.removeAttr('disabled');
+    });
+
+
+    // var $selector = $("select"),
+    //   $send = $('#send');
+    //
+    //   $send.attr('disabled', true);
+    //   $selector.keyup(function() {
+    //   var trigger = false;
+    //   $selector.each(function() {
+    //       if (!$(this).val()) {
+    //           trigger = true;
+    //       }
+    //   });
+    //   trigger ? $send.attr('disabled', true) : $send.removeAttr('disabled');
+    //   });
+    //
+    //   var $checkbox = $("input:checked"),
+    //     $send = $('#send');
+    //
+    //     $send.attr('disabled', true);
+    //     $checkbox.keyup(function() {
+    //     var trigger = false;
+    //     $checkbox.each(function() {
+    //         if (!$(this).val()) {
+    //             trigger = true;
+    //         }
+    //     });
+    //     trigger ? $send.attr('disabled', true) : $send.removeAttr('disabled');
+    //     });
+
+
   $('#contact_form').on('submit', function(e) {
     // var $submit = $('input:submit', $contactForm);
 	  // var defaultSubmitText = $submit.val();
@@ -795,7 +839,7 @@ var $contactForm = $('#contact_form');
 
        //send to formspree
        $.ajax({
-           url:'//formspree.io/emily@obviouslee.com',
+           url:'//formspree.io/hosea@obviouslee.com',
            method:'POST',
            data:{
                "Legal Guardian First Name":legal_guardian,
@@ -899,7 +943,7 @@ var $contactForm = $('#contact_form');
       // console.log("Message Sent!");
 			setTimeout(function() {
 				//$('.alert--success').remove();
-			window.location.href = "http://www.coastalkidsdental.com";
+			// window.location.href = "http://www.coastalkidsdental.com";
 			}, 5000);
 		},
 		// error: function(err) {
