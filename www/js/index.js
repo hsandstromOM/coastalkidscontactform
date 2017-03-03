@@ -730,7 +730,7 @@ var $contactForm = $('#contact_form');
 
        //send to formspree
        $.ajax({
-           url:'//formspree.io/hosea@obviouslee.com',
+           url:'//formspree.io/websitecontact@coastalkidsdental.com',
            method:'POST',
            data: $(this).serialize(),
            dataType:"json",
@@ -745,7 +745,7 @@ var $contactForm = $('#contact_form');
 				//$('.alert--success').remove();
 				$submit.attr('disabled', false).val(defaultSubmitText);
         	window.location.href = "http://www.coastalkidsdental.com";
-			}, 5000);
+			}, 3000);
 		},
 		error: function(err) {
 			//$contactForm.find('.alert--loading').hide();
