@@ -21,13 +21,13 @@
     <link href="css/starter-template.css" rel="stylesheet">
     <link href="css/dinski.css" rel="stylesheet" type="text/css" />
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 </head>
 
 <body>
     <div class="container">
 
-        <form class="well form-horizontal form-validation" id="contact_form" action="">
+        <form class="well form-horizontal" id="contact_form">
             <fieldset>
 
                 <div id="google_translate_element" style=""></div>
@@ -64,13 +64,13 @@
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group form-validation">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="legal-guardian-req" id="legal_guardian" placeholder="First" class="form-control" type="text" required>
+                                    <input name="Legal Guardian First Name" id="legal_guardian" placeholder="First" class="form-control" type="text" required>
                                 </div>
                             </div>
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="legal-guardianL-req" id="legal_guardianL" placeholder="Last" class="form-control" type="text" required >
+                                    <input name="Legal Guardian Last Name" id="legal_guardianL" placeholder="Last" class="form-control" type="text" required >
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                             <div class="col-md-10 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                    <input name="mailing-address-req" id="address" placeholder="Address" class="form-control" type="text" required >
+                                    <input name="Address" id="address" placeholder="Address" class="form-control" type="text" required >
                                 </div>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                             <div class="col-md-5 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                    <input name="city-req" placeholder="City" id="city" class="form-control" type="text" required >
+                                    <input name="City" placeholder="City" id="city" class="form-control" type="text" required >
                                 </div>
                             </div>
 
@@ -123,7 +123,7 @@
                             <div class="col-md-2 selectContainer">
                                 <div class="input-group" >
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                    <select name="state-req" id="state" class="form-control selectpicker" required>
+                                    <select name="State" id="state" class="form-control selectpicker" required>
       <option value=" " >State</option>
       <option>Alabama</option>
       <option>Alaska</option>
@@ -185,7 +185,7 @@
                             <div class="col-md-3 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                    <input name="zip-req" placeholder="Zip Code ex.12345" id="zip" class="form-control" type="text" pattern="\d\d\d\d\d" required>
+                                    <input name="Zip" placeholder="Zip Code ex.12345" id="zip" class="form-control" type="text" pattern="\d\d\d\d\d" required>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                    <input name="phone-req" id="phone" placeholder="843-XXX-XXXX" class="form-control" type="tel"  pattern="\d\d\d\-\d\d\d-\d\d\d\d" title="(843) XXX-XXXX"  required>
+                                    <input name="Phone" id="phone" placeholder="843-XXX-XXXX" class="form-control" type="tel"  pattern="\d\d\d\-\d\d\d-\d\d\d\d" title="(843) XXX-XXXX"  required>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +213,7 @@
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                    <input name="alt-phone-req" id= "alt_phone" placeholder="843-XXX-XXXX" class="form-control" type="tel" pattern="\d\d\d\-\d\d\d-\d\d\d\d" title="(843) XXX-XXXX" >
+                                    <input name="Alt. Phone" id= "alt_phone" placeholder="843-XXX-XXXX" class="form-control" type="tel" pattern="\d\d\d\-\d\d\d-\d\d\d\d" title="(843) XXX-XXXX" >
                                 </div>
                             </div>
                         </div>
@@ -227,7 +227,7 @@
                             <div class="col-md-6 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                    <input name="email-address-req" placeholder="Email" id="email" class="form-control" type="email" required>
+                                    <input name="Email" placeholder="Email" id="email" class="form-control" type="email" required>
                                 </div>
                             </div>
                         </div>
@@ -245,19 +245,19 @@
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input placeholder="First" id="child_1_first_name" class="form-control" type="text" name="child1-first-req" required>
+                                    <input placeholder="First" id="child_1_first_name" class="form-control" type="text" name="First Name"required>
                                 </div>
                             </div>
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="child1-last-req" id="child_1_last_name" placeholder="Last" class="form-control" type="text" required>
+                                    <input name="Last Name" id="child_1_last_name" placeholder="Last" class="form-control" type="text" required>
                                 </div>
                             </div>
                             <div class="col-md-4 inputGroupContainer">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                    <input name="child1-dob-req" id="child_1_dob" placeholder="MM/DD/YYYY" class="form-control" type="text" required>
+                                    <input name="D.O.B." id="child_1_dob" placeholder="MM/DD/YYYY" class="form-control" type="date" required>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +269,7 @@
                             <div class="col-md-6 selectContainer">
                                 <div id="insurance" class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                    <select name="child1-select-ins-req" id="insChoose" class="form-control selectpicker" required >
+                                    <select name="INSURANCE CHOICE" id="insChoose" class="form-control selectpicker" required >
           <option value="" >Select insurance for the child above</option>
           <option name="Self Pay" value="self_pay">Self Pay</option>
           <option name="Private Insurance" value="private_insurance">Private Insurance</option>
@@ -306,42 +306,42 @@
                                     <div style="" class="inputLabs">Subscriber First Name:</div>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input class="form-control" type="text" name="Subscriber First Name" id="subscriberFirstName1" placeholder="First">
+                                        <input class="form-control" type="text" name="-Subscriber First Name" id="subscriberFirstName1" placeholder="First">
                                     </div>
                                 </div>
                                 <div class="col-md-4 inputGroupContainer">
                                     <div style="" class="inputLabs">Subscriber Last Name:</div>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input class="form-control" type="text" name="Subscriber Last Name" id="subscriberLastName1" placeholder="Last">
+                                        <input class="form-control" type="text" name="-Subscriber Last Name" id="subscriberLastName1" placeholder="Last">
                                     </div>
                                 </div>
                                 <div class="col-md-4 inputGroupContainer">
                                     <div style="" class="inputLabs">Subscriber DOB:</div>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                        <input class="form-control" type="date" name="Subscriber DOB" id="subscriberDOB1" placeholder="MM/DD/YYYY">
+                                        <input class="form-control" type="date" name="-Subscriber DOB" id="subscriberDOB1" placeholder="MM/DD/YYYY">
                                     </div>
                                 </div>
                                 <div class="col-md-4 inputGroupContainer">
                                     <div style="" class="inputLabs">Subscriber ID#/SS#</div>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                                        <input class="form-control" type="text" name="Subscriber ID#/SS#" id="subscriberID1" placeholder="Subscriber ID#/SS#">
+                                        <input class="form-control" type="text" name="-Subscriber ID#/SS#" id="subscriberID1" placeholder="Subscriber ID#/SS#">
                                     </div>
                                 </div>
                                 <div class="col-md-4 inputGroupContainer">
                                     <div style="" class="inputLabs">Employer</div>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                                        <input class="form-control" type="text" name="Employer" id="employer1" placeholder="Employer">
+                                        <input class="form-control" type="text" name="-Employer" id="employer1" placeholder="Employer">
                                     </div>
                                 </div>
                                 <div class="col-md-4 inputGroupContainer">
                                     <div style="" class="inputLabs">Insurance Company Name</div>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                                        <input class="form-control" type="text" name="Insurance Company Name" id="insurCompany1" placeholder="Insurance Company Name">
+                                        <input class="form-control" type="text" name="-Insurance Company Name" id="insurCompany1" placeholder="Insurance Company Name">
                                     </div>
                                 </div>
                             </div>
@@ -396,7 +396,7 @@
                                 <div id="sameInsurance" class="col-md-6 selectContainer">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                        <select id="insSame3" name="Insurance same as child above: 1 = Yes 2 = No" class="form-control selectpicker">
+                                        <select id="insSame3" name="Same insurance as child above?" class="form-control selectpicker">
                    <option value=""> Select Insurance for the child above</option>
                      <option value="yes">This child has same insurance as child above.</option>
                      <option value="no">This child has a different insurance from the child above.</option>
@@ -408,7 +408,7 @@
                                 <div id="insuranceNew2" class="col-md-12 selectContainer">
                                     <div class="input-group">
                                         <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span> -->
-                                        <select id="insChoose3" class="form-control selectpicker hide" name="Insurance 2 Selection 1 = Self Pay, 2 = Private Insurance, 3 = Mediciad">
+                                        <select id="insChoose3" class="form-control selectpicker hide" name= "#2 INSURANCE CHOICE">
                 <option value="">Select type of insurance</option>
                   <option value="self_pay">Self Pay</option>
                   <option value="private_insurance">Private Insurance</option>
@@ -427,42 +427,42 @@
                                         <div style="" class="inputLabs">Subscriber First Name:</div>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                            <input class="form-control" type="text" name="Subscriber First Name 2" id="subscriberFirstName2" placeholder="Name">
+                                            <input class="form-control" type="text" name="-Subscriber First Name 2" id="subscriberFirstName2" placeholder="Name">
                                         </div>
                                     </div>
                                     <div class="col-md-4 inputGroupContainer">
                                         <div style="" class="inputLabs">Subscriber Last Name:</div>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                            <input class="form-control" type="text" name="Subscriber Last Name 2" id="subscriberLastName2" placeholder="Last">
+                                            <input class="form-control" type="text" name="-Subscriber Last Name 2" id="subscriberLastName2" placeholder="Last">
                                         </div>
                                     </div>
                                     <div class="col-md-4 inputGroupContainer">
                                         <div style="" class="inputLabs">Subscriber DOB:</div>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                            <input class="form-control" type="date" name="Subscriber DOB 2" id="subscriberDOB2" placeholder="MM/DD/YYYY">
+                                            <input class="form-control" type="date" name="-Subscriber DOB 2" id="subscriberDOB2" placeholder="MM/DD/YYYY">
                                         </div>
                                     </div>
                                     <div class="col-md-4 inputGroupContainer">
                                         <div style="" class="inputLabs">Subscriber ID#/SS#</div>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                                            <input class="form-control" type="text" name="Subscriber ID 2" id="subscriberID2" placeholder="Subscriber ID#/SS#">
+                                            <input class="form-control" type="text" name="-Subscriber ID 2" id="subscriberID2" placeholder="Subscriber ID#/SS#">
                                         </div>
                                     </div>
                                     <div class="col-md-4 inputGroupContainer">
                                         <div style="" class="inputLabs">Employer</div>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                                            <input class="form-control" type="text" name="Employer 2" id="employer2" placeholder="Employer">
+                                            <input class="form-control" type="text" name="-Employer 2" id="employer2" placeholder="Employer">
                                         </div>
                                     </div>
                                     <div class="col-md-4 inputGroupContainer">
                                         <div style="" class="inputLabs">Insurance Company Name</div>
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                                            <input class="form-control" type="text" name="Insurance Company Name 2" id="insurCompany2" placeholder="Insurance Company Name">
+                                            <input class="form-control" type="text" name="-Insurance Company Name 2" id="insurCompany2" placeholder="Insurance Company Name">
                                         </div>
                                     </div>
                                     <div class="col-md-12" style="height: 20px; width: 100%"></div>
@@ -518,7 +518,7 @@
                           <div id="sameInsurance" class="col-md-6 selectContainer">
                               <div class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                  <select id="insSame4" name="Insurance same as child 2 above: 1 = Yes 2 = No" class="form-control selectpicker">
+                                  <select id="insSame4" name="Insurance same as child 2 above?" class="form-control selectpicker">
               <option value=""> Select Insurance for the child above</option>
               <option value="yes">This child has same insurance as child above.</option>
               <option value="no">This child has a different insurance from the child above.</option>
@@ -529,7 +529,7 @@
                       <div class="name-row">
                           <div id="insuranceNew3" class="col-md-12 selectContainer">
                               <div class="input-group">
-                                  <select id="insChoose4" class="form-control selectpicker hide" name="Insurance 3 Selection 1 = Self Pay, 2 = Private Insurance, 3 = Mediciad">
+                                  <select id="insChoose4" class="form-control selectpicker hide" name="#3 INSURANCE CHOICE">
               <option value="">Select type of insurance</option>
               <option value="self_pay">Self Pay</option>
               <option value="private_insurance">Private Insurance</option>
@@ -547,42 +547,42 @@
                                   <div style="" class="inputLabs">Subscriber First Name:</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                      <input class="form-control" type="text" name="Subscriber First Name 3" id="subscriberFirstName3" placeholder="Name">
+                                      <input class="form-control" type="text" name="-Subscriber First Name 3" id="subscriberFirstName3" placeholder="Name">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
                                   <div style="" class="inputLabs">Subscriber Last Name:</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                      <input class="form-control" type="text" name="Subscriber Last Name 3" id="subscriberLastName3" placeholder="Last">
+                                      <input class="form-control" type="text" name="-Subscriber Last Name 3" id="subscriberLastName3" placeholder="Last">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
                                   <div style="" class="inputLabs">Subscriber DOB:</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                      <input class="form-control" type="date" name="Subscriber DOB 3" id="subscriberDOB3" placeholder="MM/DD/YYYY">
+                                      <input class="form-control" type="date" name="-Subscriber DOB 3" id="subscriberDOB3" placeholder="MM/DD/YYYY">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
                                   <div style="" class="inputLabs">Subscriber ID#/SS#</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                                      <input class="form-control" type="text" name="Subscriber ID 3" id="subscriberID3" placeholder="Subscriber ID#/SS#">
+                                      <input class="form-control" type="text" name="-Subscriber ID 3" id="subscriberID3" placeholder="Subscriber ID#/SS#">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
                                   <div style="" class="inputLabs">Employer</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                                      <input class="form-control" type="text" name="Employer 3" id="employer3" placeholder="Employer">
+                                      <input class="form-control" type="text" name="-Employer 3" id="employer3" placeholder="Employer">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
                                   <div style="" class="inputLabs">Insurance Company Name</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                                      <input class="form-control" type="text" name="Insurance Company Name 3" id="insurComp3" placeholder="Insurance Company Name">
+                                      <input class="form-control" type="text" name="-Insurance Company Name 3" id="insurComp3" placeholder="Insurance Company Name">
                                   </div>
                               </div>
                               <div class="col-md-12" style="height: 20px; width: 100%"></div>
@@ -635,7 +635,7 @@
                           <div id="sameInsurance" class="col-md-6 selectContainer">
                               <div class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                  <select id="insSame5" name="Insurance same as child 3 above: 1 = Yes 2 = No" class="form-control selectpicker">
+                                  <select id="insSame5" name="Insurance same as child 3 above?" class="form-control selectpicker">
               <option value=""> Select Insurance for the child above</option>
               <option value="yes">This child has same insurance as child above.</option>
               <option value="no">This child has a different insurance from the child above.</option>
@@ -646,7 +646,7 @@
                       <div class="name-row">
                           <div id="insuranceNew4" class="col-md-12 selectContainer">
                               <div class="input-group">
-                                  <select id="insChoose5" class="form-control selectpicker hide" name="Insurance 4 Selection 1 = Self Pay, 2 = Private Insurance, 3 = Mediciad">
+                                  <select id="insChoose5" class="form-control selectpicker hide" name="#4 INSURANCE CHOICE">
               <option value="">Select type of insurance</option>
               <option value="self_pay">Self Pay</option>
               <option value="private_insurance">Private Insurance</option>
@@ -664,42 +664,42 @@
                                   <div style="" class="inputLabs">Subscriber First Name:</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                      <input class="form-control" type="text" name="Subscriber First Name 4" id="subscriberFirstName4" placeholder="Name">
+                                      <input class="form-control" type="text" name="-Subscriber First Name 4" id="subscriberFirstName4" placeholder="Name">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
                                   <div style="" class="inputLabs">Subscriber Last Name:</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                      <input class="form-control" type="text" name="Subscriber Last Name 4" id="subscriberLastName4" placeholder="Last">
+                                      <input class="form-control" type="text" name="-Subscriber Last Name 4" id="subscriberLastName4" placeholder="Last">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
                                   <div style="" class="inputLabs">Subscriber DOB:</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i> Date of Birth</span>
-                                      <input class="form-control" type="date" name="Subscriber DOB 4" id="subscriberDOB4" placeholder="MM/DD/YYYY">
+                                      <input class="form-control" type="date" name="-Subscriber DOB 4" id="subscriberDOB4" placeholder="MM/DD/YYYY">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
                                   <div style="" class="inputLabs">Subscriber ID#/SS#</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                                      <input class="form-control" type="text" name="Subscriber ID 4" id="subscriberID4" placeholder="Subscriber ID#/SS#">
+                                      <input class="form-control" type="text" name="-Subscriber ID 4" id="subscriberID4" placeholder="Subscriber ID#/SS#">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
                                   <div style="" class="inputLabs">Employer</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-                                      <input class="form-control" type="text" name="Employer 4" id="employer4" placeholder="Employer">
+                                      <input class="form-control" type="text" name="-Employer 4" id="employer4" placeholder="Employer">
                                   </div>
                               </div>
                               <div class="col-md-4 inputGroupContainer">
                                   <div style="" class="inputLabs">Insurance Company Name</div>
                                   <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-                                      <input class="form-control" type="text" name="Insurance Company Name 4" id="insurComp4" placeholder="Insurance Company Name">
+                                      <input class="form-control" type="text" name="-Insurance Company Name 4" id="insurComp4" placeholder="Insurance Company Name">
                                   </div>
                               </div>
                               <div class="col-md-12" style="height: 20px; width: 100%"></div>
@@ -835,7 +835,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                            <input type="checkbox" id="complete_and_accurate" name="cert1-req" value="yes" required />&nbsp  I am certifying that the information listed is complete and accurate
+                            <input type="checkbox" id="complete_and_accurate" name="Form is complete and accurate" value="yes" required />&nbsp  I am certifying that the information listed is complete and accurate
                         </label>
                                     </div>
                                 </div>
@@ -848,7 +848,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                <input type="checkbox" id="legal_guardian_for_children_listed" name="cert2-req" value="yes" required  />&nbsp  I am the legal guardian of the children identified above.
+                                <input type="checkbox" id="legal_guardian_for_children_listed" name="Legal guardian" value="yes" required  />&nbsp  I am the legal guardian of the children identified above.
                             </label>
                                     </div>
                                 </div>
@@ -861,7 +861,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                    <input type="checkbox" id="give_permission" name="cert3-req" value="yes" required/>&nbsp  I give the Coastal Kids Dental & Braces permission to take photos of my child for medical records.
+                                    <input type="checkbox" id="give_permission" name="Permission to take photos" value="yes" required/>&nbsp  I give the Coastal Kids Dental & Braces permission to take photos of my child for medical records.
                                 </label>
                                     </div>
                                 </div>
@@ -874,7 +874,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                        <input type="checkbox" id="understand" name="cert4-req" value="yes" required/>&nbsp  I have read and understand the <a href ="/Privacy-Act-Document.pdf" target="_blank"> Privacy Act Document. </a>
+                                        <input type="checkbox" id="understand" name="Understand Privacy Act" value="yes" required/>&nbsp  I have read and understand the <a href ="/Privacy-Act-Document.pdf" target="_blank"> Privacy Act Document. </a>
                                     </label>
                                     </div>
                                 </div>
@@ -887,7 +887,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" id="understand_office" name="cert5-req" value="yes" required/>&nbsp  I have read and understand <a href ="/Coastal-Kids-Dental-Braces-Office-Policies.pdf" target="_blank"> Coastal Kids Dental & Braces Office Polices</a>.
+                                            <input type="checkbox" id="understand_office" name="Read and understand office policies" value="yes" required/>&nbsp  I have read and understand <a href ="/Coastal-Kids-Dental-Braces-Office-Policies.pdf" target="_blank"> Coastal Kids Dental & Braces Office Polices</a>.
                                         </label>
                                     </div>
                                 </div>
@@ -900,7 +900,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                                <input type="checkbox" id="responsible" name="cert6-req" value="yes" required/>&nbsp I will be responsible for any fees not covered by my insurance. <a href ="/How-Insurance-Works.pdf" target="_blank"> How insurance works</a>.
+                                                <input type="checkbox" id="responsible" name="Responsible for fees that are not covered" value="yes" required/>&nbsp I will be responsible for any fees not covered by my insurance. <a href ="/How-Insurance-Works.pdf" target="_blank"> How insurance works</a>.
                                             </label>
                                     </div>
                                 </div>
@@ -917,13 +917,13 @@
                             <div class="col-md-6 inputGroupContainer">Name of Legal Guardian:
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input name="full-name-req" id="full_name" placeholder="Full Name of Legal Guardian" class="form-control" type="text" required>
+                                    <input name="Full name" id="full_name" placeholder="Full Name of Legal Guardian" class="form-control" type="text" required>
                                 </div>
                             </div>
                             <div class="col-md-3 inputGroupContainer">Date:
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                    <input name="date-req" id="date_signed" placeholder="MM/DD/YYYY" class="form-control" type="date" required>
+                                    <input name="Date" id="date_signed" placeholder="MM/DD/YYYY" class="form-control" type="date" required>
                                 </div>
                             </div>
                         </div>
@@ -935,7 +935,7 @@
                     <!-- <div class="alert alert--loading" role="alert" id="sending_message" style="display: none">Sending message…<i class="glyphicon glyphicon-refresh"></i> </div> -->
                     <div class="alert alert-success" role="alert" id="success_message" style="display: none">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
                     <!-- <div class="alert alert--error" role="alert" id="error_message" style="display: none">Ops, there was an error.<i class="glyphicon glyphicon-warning-sign"></i></div> -->
-                    <!-- <input type="hidden" name="_subject" value="New contact form submission" /> -->
+                    <input type="hidden" name="_subject" value="New contact form submission" />
                     <!-- <input type="hidden" id="redirect" name="_next" value="http://coastalkidsdental.com" /> -->
 
                     <!--Honeypot for catching bots-->
@@ -947,7 +947,7 @@
                             <div class="contact-row">
                                 <!-- <div class="g-recaptcha" data-sitekey="6LdYSCcTAAAAAPVaXQ2gdmDeTe3w_PgqNTGT47_R"></div>
                                 <div class="col-md-12" style="padding-bottom: 20px"></div> -->
-                                <button value="Send" type="submit" id="send" class="btn btn-warning" style="height:35px; width:200px">Send <span class="glyphicon glyphicon-send"></span></button>
+                                <input value="Send" id="submit" type="submit" class="submit btn btn-warning" style="height:35px; width:200px">
 
                             </div>
                         </div>

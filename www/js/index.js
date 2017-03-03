@@ -667,50 +667,23 @@ $( "#addAnotherInd4" ).click(function() {
 /////////////////////////////// ^^ insurance section ///////////////
 
 
-  $('#apptType input').on('change', function() {
-    var apptType = ($('input[name=appt]:checked', '#apptType').val());
-    console.log(apptType);
-    patient.apptType = apptType || "not answered"
-  });
-  $('#location input').on('change', function() {
-    var location = ($('input[name=loc]:checked', '#location').val());
-    console.log(location);
-    patient.location = location
-  });
-  $('#contact input').on('change', function() {
-    var contactMethod = ($('input[name=cont]:checked', '#contact').val());
-    console.log(contactMethod);
-    patient.contactMethod = contactMethod
-  });
-  $('#dayPref input').on('change', function() {
-    var dayPreference = ($('input[name=day]:checked', '#dayPref').val());
-    console.log(dayPreference);
-    patient.dayPreference = dayPreference
-  });
-  $('#prefTime input').on('change', function() {
-    var timePreference = ($('input[name=time]:checked', '#prefTime').val());
-    console.log(timePreference);
-    patient.timePreference = timePreference
 
-  });
-  var $input = $("input[name*='req']")
-  var $selector = $("select")
-  var $checkbox = $("input:checked"),
-    $send = $('#send');
-
-    $send.attr('disabled', true);
-    $input.keyup(function() {
-    var trigger = false;
-    $input.selector.checkbox.each(function() {
-        if (!$(this).val()) {
-            trigger = true;
-        }
-    });
-    trigger ? $send.attr('disabled', true) : $send.removeAttr('disabled');
-    });
+  // var $input = $("input[name*='req']")
+  //   $send = $('#send');
+  //
+  //   $send.attr('disabled', true);
+  //   $input.keyup(function() {
+  //   var trigger = false;
+  //   $input.each(function() {
+  //       if (!$(this).val()) {
+  //           trigger = true;
+  //       }
+  //   });
+  //   trigger ? $send.attr('disabled', true) : $send.removeAttr('disabled');
+  //   });
 
 
-    // var $selector = $("select"),
+    // var $selector = $(":selected"),
     //   $send = $('#send');
     //
     //   $send.attr('disabled', true);
@@ -724,237 +697,71 @@ $( "#addAnotherInd4" ).click(function() {
     //   trigger ? $send.attr('disabled', true) : $send.removeAttr('disabled');
     //   });
     //
-    //   var $checkbox = $("input:checked"),
-    //     $send = $('#send');
+      // var $checkbox = $("input:checked"),
+      //   $send = $('#send');
+      //
+      //   $send.attr('disabled', true);
+      //   $checkbox.keyup(function() {
+      //   var trigger = false;
+      //   $checkbox.each(function() {
+      //       if (!$(this).val()) {
+      //           trigger = true;
+      //       }
+      //   });
+      //   trigger ? $send.attr('disabled', true) : $send.removeAttr('disabled');
+      //   });
+     //
+    //   $('.checkbox').click(function () {
+    //      if($('input[value="I_confirm"]').is(':checked')) //edit the value here to use your own.
+    //         {
     //
-    //     $send.attr('disabled', true);
-    //     $checkbox.keyup(function() {
-    //     var trigger = false;
-    //     $checkbox.each(function() {
-    //         if (!$(this).val()) {
-    //             trigger = true;
+    //         $('.Submit').show();
     //         }
-    //     });
-    //     trigger ? $send.attr('disabled', true) : $send.removeAttr('disabled');
-    //     });
-
-
-  $('#contact_form').on('submit', function(e) {
-    // var $submit = $('input:submit', $contactForm);
-	  // var defaultSubmitText = $submit.val();
+    //      else {
+    //        $('.Submit').hide();
+    //      }
+    //    });
+    //  });
+var $contactForm = $('#contact_form');
+  $contactForm.submit(function(e) {
+    var $submit = $('input:submit', $contactForm);
+	  var defaultSubmitText = $submit.val();
        e.preventDefault();
-
-       var legal_guardian = $('#legal_guardian').val();
-       var legal_guardianL = $('#legal_guardianL').val();
-       var legal_guardian2 = $('#legal_guardian2').val();
-       var legal_guardianL2 = $('#legal_guardianL2').val();
-       var email = $('#email').val();
-       var address = $('#address').val();
-       var city = $('#city').val();
-       var state = $('#state').val();
-       var zip = $('#zip').val();
-       var phone = $('#phone').val();
-       var alt_phone = $('#alt_phone').val();
-
-       var child1 = $('#child1').val();
-       var child_1_first_name = $('#child_1_first_name').val();
-       var child_1_last_name = $('#child_1_last_name').val();
-       var child_1_dob = $('#child_1_dob').val();
-       var insChoose = $('#insChoose').val();
-       var child1private = $('#child1private').val();
-       var subscriberFirstName1 = $('#subscriberFirstName1').val();
-       var subscriberLastName1 = $('#subscriberLastName1').val();
-       var subscriberDOB1 = $("#subscriberDOB1").val();
-       var subscriberID1 = $("#subscriberID1").val();
-       var employer1 = $("#employer1").val();
-       var insurCompany1 = $("#insurCompany1").val();
-       var child1medicaid = $("#child1medicaid").val();
-       var medicaid_id1 = $("#medicaid_id1").val();
-
-       var child2 = $('#child2').val();
-       var child_2_first_name = $('#child_2_first_name').val();
-       var child_2_last_name = $('#child_2_last_name').val();
-       var child_2_dob = $('#child_2_dob').val();
-       var insSame3 = $('#insSame3').val();
-       var insChoose3 = $('#insChoose3').val();
-       var child2private = $('#child2private').val();
-       var subscriberFirstName2 = $('#subscriberFirstName2').val();
-       var subscriberLastName2 = $('#subscriberLastName2').val();
-       var subscriberDOB2 = $("#subscriberDOB2").val();
-       var subscriberID2 = $("#subscriberID2").val();
-       var employer2 = $("#employer2").val();
-       var insurCompany2 = $("#insurCompany2").val();
-       var medicaid_id2 = $("#medicaid_id2").val();
-
-       var child3 = $('#child3').val();
-       var child_3_first_name = $('#child_3_first_name').val();
-       var child_3_last_name = $('#child_3_last_name').val();
-       var child_3_dob = $('#child_3_dob').val();
-       var insSame4 = $('#insSame4').val();
-       var insChoose4 = $('#insChoose4').val();
-       var child3private = $('#child3private').val();
-       var subscriberFirstName3 = $('#subscriberFirstName3').val();
-       var subscriberLastName3 = $('#subscriberLastName3').val();
-       var subscriberDOB3 = $("#subscriberDOB3").val();
-       var subscriberID3 = $("#subscriberID3").val();
-       var employer3 = $("#employer3").val();
-       var insurCompany3 = $("#insurCompany3").val();
-       var medicaid_id3 = $("#medicaid_id3").val();
-
-       var child4 = $('#child4').val();
-       var child_4_first_name = $('#child_4_first_name').val();
-       var child_4_last_name = $('#child_4_last_name').val();
-       var child_4_dob = $('#child_4_dob').val();
-       var insSame5 = $('#insSame5').val();
-       var insChoose5 = $('#insChoose5').val();
-       var child4private = $('#child4private').val();
-       var subscriberFirstName4 = $('#subscriberFirstName4').val();
-       var subscriberLastName4 = $('#subscriberLastName4').val();
-       var subscriberDOB4 = $("#subscriberDOB4").val();
-       var subscriberID4 = $("#subscriberID4").val();
-       var employer4 = $("#employer4").val();
-       var insurCompany4 = $("#insurCompany4").val();
-       var medicaid_id4 = $("#medicaid_id4").val();
-
-       var rp_1_first = $("#rp_1_first").val();
-       var rp_1_last = $("#rp_1_last").val();
-       var rp_2_first = $("#rp_2_first").val();
-       var rp_2_last = $("#rp_2_last").val();
-       var rp_3_first = $("#rp_3_first").val();
-       var rp_3_last = $("#rp_3_last").val();
-       var rp_4_first = $("#rp_4_first").val();
-       var rp_4_last = $("#rp_4_last").val();
-
-       var complete_and_accurate = $("#complete_and_accurate").val();
-       var legal_guardian_for_children_listed = $("#legal_guardian_for_children_listed").val();
-       var give_permission = $("#give_permission").val();
-       var understand = $("#understand").val();
-       var understand_office = $("#understand_office").val();
-       var responsible = $("#responsible").val();
-
-       var full_name = $("#full_name").val();
-       var date_signed = $("#date_signed").val();
-
-
 
        //send to formspree
        $.ajax({
            url:'//formspree.io/hosea@obviouslee.com',
            method:'POST',
-           data:{
-               "Legal Guardian First Name":legal_guardian,
-               "Legal Guardian Last Name":legal_guardianL,
-               "Legal Guardian 2 First Name" :legal_guardian2,
-               "Legal Guardian 2 Last Name" :legal_guardianL2,
-               "Email" :email,
-               "Address" :address,
-               "City" :city,
-               "State" :state,
-               "Zip Code" :zip,
-               "Phone" :phone,
-               "Alt. Phone" :alt_phone,
-               "-CHILD 1 INFORMATION-" :child1,
-               "First Name" :child_1_first_name,
-               "Last Name" :child_1_last_name,
-               "D.O.B." :child_1_dob,
-               "INSURANCE CHOICE" :insChoose,
-               "Private Insurance Information" :child1private,
-               "-Subscriber First Name" :subscriberFirstName1,
-               "-Subscriber Last Name" :subscriberLastName1,
-               "-D.O.B" :subscriberDOB1,
-               "-ID Number" :subscriberID1,
-               "-Employer"  :employer1,
-               "-Company" :insurCompany1,
-               "Medicaid ID Number" :medicaid_id1,
-               "-CHILD 2 INFORMATION-" :child2,
-               "#2 First Name" :child_2_first_name,
-               "#2 Last Name" :child_2_last_name,
-               "#2 D.O.B." :child_2_dob,
-               "Same insurance as child above?" :insSame3,
-               "#2 INSURANCE CHOICE" :insChoose3,
-               "#2 Private Insurance Information" :child2private,
-               "-#2 Subscriber First Name" :subscriberFirstName2,
-               "-#2 Subscriber Last Name" :subscriberLastName2,
-               "-#2 D.O.B" :subscriberDOB2,
-               "-#2 ID Number" :subscriberID2,
-               "-#2 Employer"  :employer2,
-               "-#2 Company" :insurCompany2,
-               "#2 Medicaid ID Number" :medicaid_id2,
-               "-CHILD 3 INFORMATION-" :child3,
-               "#3 First Name" :child_3_first_name,
-               "#3 Last Name" :child_3_last_name,
-               "#3 D.O.B." :child_3_dob,
-               "#3 Same insurance as child above?" :insSame3,
-               "#3 INSURANCE CHOICE" :insChoose3,
-               "#3 Private Insurance Information" :child3private,
-               "-#3 Subscriber First Name" :subscriberFirstName3,
-               "-#3 Subscriber Last Name" :subscriberLastName3,
-               "-#3 D.O.B" :subscriberDOB3,
-               "-#3 ID Number" :subscriberID3,
-               "-#3Employer"  :employer3,
-               "-#3 Company" :insurCompany3,
-               "#3 Medicaid ID Number" :medicaid_id3,
-               "-CHILD 4 INFORMATION-" :child4,
-               "#4 First Name" :child_4_first_name,
-               "#4 Last Name" :child_4_last_name,
-               "#4 D.O.B." :child_4_dob,
-               "#4 Same insurance as child above?" :insSame4,
-               "#4 INSURANCE CHOICE" :insChoose4,
-               "#4 Private Insurance Information" :child4private,
-               "-#4 Subscriber First Name" :subscriberFirstName4,
-               "-#4 Subscriber Last Name" :subscriberLastName4,
-               "-#4 D.O.B" :subscriberDOB4,
-               "-#4 ID Number" :subscriberID4,
-               "-#4 Employer"  :employer4,
-               "-#4 Company" :insurCompany4,
-               "#4 Medicaid ID Number" :medicaid_id4,
-               "Responsible Person First Name" :rp_1_first,
-               "Responsible Person Last Name" :rp_1_last,
-               "Responsible Person 2 First Name" :rp_2_first,
-               "Responsible Person 2 Last Name" :rp_2_last,
-               "Responsible Person 3 First Name" :rp_3_first,
-               "Responsible Person 3 Last Name" :rp_3_last,
-               "Responsible Person 4 First Name" :rp_4_first,
-               "Responsible Person 4 Last Name" :rp_4_last,
-
-                "Information complete and accurate" :complete_and_accurate,
-                "Legal guardian for the children listed above" :legal_guardian_for_children_listed,
-                "Give permission to take photos" :give_permission,
-                "Understand the Privacy Act" :understand,
-                "Understand the Office Policies" :understand_office,
-                "Responsible for uncovered fees" :responsible,
-
-                "Full Name" :full_name,
-                "Date Signed" :date_signed,
-
-
-
-               _subject:'Insurance Form Submission',
-           },
+           data: $(this).serialize(),
            dataType:"json",
-
-		// beforeSend: function() {
-		// 	//$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-		// 	$submit.attr('disabled', true).val('Sending message…');
-		// },
+           beforeSend: function() {
+			//$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+			$submit.attr('disabled', true).val('Sending message…');
+		},
 		success: function(data) {
 			//$contactForm.append('<div class="alert alert--success">Message sent!</div>');
-			$('#success_message').show();
-      // console.log("Message Sent!");
+			$submit.val('Message sent!');
 			setTimeout(function() {
 				//$('.alert--success').remove();
-			// window.location.href = "http://www.coastalkidsdental.com";
+				$submit.attr('disabled', false).val(defaultSubmitText);
+        	window.location.href = "http://www.coastalkidsdental.com";
 			}, 5000);
 		},
-		// error: function(err) {
-		// 	//$contactForm.find('.alert--loading').hide();
-		// 	//$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-		// 	$submit.val('Ops, there was an error.');
+		error: function(err) {
+			//$contactForm.find('.alert--loading').hide();
+			//$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+			$submit.val('Ops, there was an error.');
+			setTimeout(function() {
+				//$('.alert--error').remove();
+				$submit.attr('disabled', false).val(defaultSubmitText);
+			}, 5000);
+},
+		// success: function(data) {
+		// 	$('#success_message').show();
 		// 	setTimeout(function() {
-		// 		//$('.alert--error').remove();
-		// 		$submit.attr('disabled', false).val(defaultSubmitText);
+		// 	window.location.href = "http://www.coastalkidsdental.com";
 		// 	}, 5000);
-		// }
+		// },
 
           //  success:function(data) {
           //      console.log('success');
