@@ -741,23 +741,34 @@ var $contactForm = $('#contact_form');
                                                                        $('.submit-fail').fadeToggle(400);
                                                                        return false;
                                                                      }
+                                                                     var full_name= $('#full_name')
+
+
+                                                                          if(full_name.val() == "") {
+                                                                            $('.submit-fail').fadeToggle(400);
+                                                                            return false;
+                                                                          }
+                                                                          var date_signed= $('#date_signed')
+
+
+                                                                               if(date_signed.val() == "") {
+                                                                                 $('.submit-fail').fadeToggle(400);
+                                                                                 return false;
+                                                                               }
 
 
 
 
     var $submit = $('input:submit', $contactForm);
 	  var defaultSubmitText = $submit.val();
-      //  e.preventDefault();
+       e.preventDefault();
        $.ajax({
            url:'//formspree.io/hosea@obviouslee.com',
            method:'POST',
            data: $(this).serialize(),
            dataType:"json",
-          //  success: function(data) {
-          //    window.location.href = "http://www.coastalkidsdental.com";
-          //  },
             });
-           e.preventDefault();
+          //  e.preventDefault();
                   $(this).get(0).reset();
                   $('.submit-success').fadeToggle(400);
                   $('.submit-fail, .submit-success').click(function() {
@@ -765,7 +776,7 @@ var $contactForm = $('#contact_form');
                    });
                   setTimeout(function(data) {
                			window.location.href = "http://www.coastalkidsdental.com";
-               			}, 5000);
+                  }, 900);
      });
   });
 // the end
