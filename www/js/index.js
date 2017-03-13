@@ -664,31 +664,106 @@ $( "#addAnotherInd4" ).click(function() {
 
 var $contactForm = $('#contact_form');
   $contactForm.submit(function(e) {
-    var legal_guardian_first_name = $('#legal_guardian')
+         var full_name= $('#full_name')
 
 
-         if(legal_guardian_first_name.val() == "") {
-           $('.submit-fail').fadeToggle(400);
-           return false;
-         }
+              if(full_name.val() == "") {
+                $('.submit-fail').fadeToggle(400);
+                return false;
+              }
+              var legal_guardian= $('#legal_guardian')
+
+
+                   if(legal_guardian.val() == "") {
+                     $('.submit-fail').fadeToggle(400);
+                     return false;
+                   }
+                   var legal_guardianL= $('#legal_guardianL')
+
+
+                        if(legal_guardianL.val() == "") {
+                          $('.submit-fail').fadeToggle(400);
+                          return false;
+                        }
+                        var address= $('#address')
+
+
+                             if(address.val() == "") {
+                               $('.submit-fail').fadeToggle(400);
+                               return false;
+                             }
+                                  var city= $('#city')
+
+
+                                       if(city.val() == "") {
+                                         $('.submit-fail').fadeToggle(400);
+                                         return false;
+                                       }
+                                       var zip= $('#zip')
+
+
+                                            if(zip.val() == "") {
+                                              $('.submit-fail').fadeToggle(400);
+                                              return false;
+                                            }
+                                            var phone= $('#phone')
+
+
+                                                 if(phone.val() == "") {
+                                                   $('.submit-fail').fadeToggle(400);
+                                                   return false;
+                                                 }
+                                                 var email= $('#email')
+
+
+                                                      if(email.val() == "") {
+                                                        $('.submit-fail').fadeToggle(400);
+                                                        return false;
+                                                      }
+                                                      var child_1_first_name= $('#child_1_first_name')
+
+
+                                                           if(child_1_first_name.val() == "") {
+                                                             $('.submit-fail').fadeToggle(400);
+                                                             return false;
+                                                           }
+                                                           var child_1_last_name= $('#child_1_last_name')
+
+
+                                                                if(child_1_last_name.val() == "") {
+                                                                  $('.submit-fail').fadeToggle(400);
+                                                                  return false;
+                                                                }
+                                                                var child_1_dob= $('#child_1_dob')
+
+
+                                                                     if(child_1_dob.val() == "") {
+                                                                       $('.submit-fail').fadeToggle(400);
+                                                                       return false;
+                                                                     }
+
+
+
+
     var $submit = $('input:submit', $contactForm);
 	  var defaultSubmitText = $submit.val();
-       e.preventDefault();
-
-       //send to formspree
+      //  e.preventDefault();
        $.ajax({
-           url:'//formspree.io/websitecontact@coastalkidsdental.com',
+           url:'//formspree.io/hosea@obviouslee.com',
            method:'POST',
            data: $(this).serialize(),
            dataType:"json",
+          //  success: function(data) {
+          //    window.location.href = "http://www.coastalkidsdental.com";
+          //  },
             });
            e.preventDefault();
                   $(this).get(0).reset();
                   $('.submit-success').fadeToggle(400);
                   $('.submit-fail, .submit-success').click(function() {
                      $(this).hide();
-                   })
-                   	setTimeout(function() {
+                   });
+                  setTimeout(function(data) {
                			window.location.href = "http://www.coastalkidsdental.com";
                			}, 5000);
      });
