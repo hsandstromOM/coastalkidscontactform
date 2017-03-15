@@ -833,7 +833,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                            <input type="checkbox" id="complete_and_accurate" name="Form is complete and accurate" value="yes" required />&nbsp  I am certifying that the information listed is complete and accurate
+                            <input type="checkbox" required id="complete_and_accurate" />&nbsp  I am certifying that the information listed is complete and accurate
                         </label>
                                     </div>
                                 </div>
@@ -846,7 +846,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                <input type="checkbox" id="legal_guardian_for_children_listed" name="Legal guardian" value="yes" required  />&nbsp  I am the legal guardian of the children identified above.
+                                <input type="checkbox" required id="legal_guardian_for_children_listed" />&nbsp  I am the legal guardian of the children identified above.
                             </label>
                                     </div>
                                 </div>
@@ -859,7 +859,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                    <input type="checkbox" id="give_permission" name="Permission to take photos" value="yes" required/>&nbsp  I give the Coastal Kids Dental & Braces permission to take photos of my child for medical records.
+                                    <input type="checkbox" required id="give_permission" />&nbsp  I give the Coastal Kids Dental & Braces permission to take photos of my child for medical records.
                                 </label>
                                     </div>
                                 </div>
@@ -872,7 +872,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                        <input type="checkbox" id="understand" name="Understand Privacy Act" value="yes" required/>&nbsp  I have read and understand the <a href ="/Privacy-Act-Document.pdf" target="_blank"> Privacy Act Document. </a>
+                                        <input type="checkbox" required id="understand" />&nbsp  I have read and understand the <a href ="/Privacy-Act-Document.pdf" target="_blank"> Privacy Act Document. </a>
                                     </label>
                                     </div>
                                 </div>
@@ -885,7 +885,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" id="understand_office" name="Read and understand office policies" value="yes" required/>&nbsp  I have read and understand <a href ="/Coastal-Kids-Dental-Braces-Office-Policies.pdf" target="_blank"> Coastal Kids Dental & Braces Office Polices</a>.
+                                            <input type="checkbox" id="understand_office" name="checkbox1" value="check" />&nbsp  I have read and understand <a href ="/Coastal-Kids-Dental-Braces-Office-Policies.pdf" target="_blank"> Coastal Kids Dental & Braces Office Polices</a>.
                                         </label>
                                     </div>
                                 </div>
@@ -898,7 +898,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                                <input type="checkbox" id="responsible" name="Responsible for fees that are not covered" value="yes" required/>&nbsp I will be responsible for any fees not covered by my insurance. <a href ="/How-Insurance-Works.pdf" target="_blank"> How insurance works</a>.
+                                                <input type="checkbox" required id="responsible" name="checkbox" value="check"  />&nbsp I will be responsible for any fees not covered by my insurance. <a href ="/How-Insurance-Works.pdf" target="_blank"> How insurance works</a>.
                                             </label>
                                     </div>
                                 </div>
@@ -935,24 +935,16 @@
                     <!--  Messagesß -->
                     <div class="alert alert-danger submit-fail display-none">Please fill in all form fields<br><a href="#"><i class="glyphicon glyphicon-warning-sign"></i></a></div>
                     <div class="alert alert-success submit-success display-none">Thanks for contacting us, we will get back to you shortly.<br><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i></a></div>
-
-                    <!-- <div class="alert alert--loading" role="alert" id="sending_message" style="display: none">Sending message…<i class="glyphicon glyphicon-refresh"></i> </div> -->
-                    <!-- <div class="alert alert-success" role="alert" id="success_message" style="display: none">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div> -->
-                    <!-- <div class="alert alert--error" role="alert" id="error_message" style="display: none">Ops, there was an error.<i class="glyphicon glyphicon-warning-sign"></i></div> -->
                     <input type="hidden" name="_subject" value="New contact form submission" />
-                    <!-- <input type="hidden" id="redirect" name="_next" value="http://coastalkidsdental.com" /> -->
+
 
                     <!--Honeypot for catching bots-->
                     <input type="text" name="_gotcha" style="display:none" />
                     <!-- Button -->
                     <div class="form-group">
                         <div class="col-md-12">
-                            <!-- <div class="form-group"> -->
                             <div class="contact-row">
-                                <!-- <div class="g-recaptcha" data-sitekey="6LdYSCcTAAAAAPVaXQ2gdmDeTe3w_PgqNTGT47_R"></div>
-                                <div class="col-md-12" style="padding-bottom: 20px"></div> -->
-                                <!-- <input value="Send" id="submit" type="submit" class="submit btn btn-warning" style="height:35px; width:200px"> -->
-                                <button class="submit btn btn-warning" style="height:35px; width:200px" type="submit" value="Send"> Submit</button><span></span>
+                                <input class="submit btn btn-warning" style="height:35px; width:200px" type="submit" value="Send" onclick="if(!this.form.checkbox.checked) {alert('Please read and approve each statement to continue.');return true}" />
                             </div>
                         </div>
                     </div>

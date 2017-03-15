@@ -776,7 +776,7 @@ var $contactForm = $('#contact_form');
                    });
                   setTimeout(function(data) {
                			window.location.href = "http://www.coastalkidsdental.com";
-                  }, 900);
+                  }, 1200);
      });
   });
 // the end
