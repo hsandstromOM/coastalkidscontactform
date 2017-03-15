@@ -833,7 +833,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                            <input type="checkbox" required id="complete_and_accurate" />&nbsp  I am certifying that the information listed is complete and accurate
+                            <input type="checkbox" id="complete_and_accurate" name="checkbox1" value="check"/>&nbsp  I am certifying that the information listed is complete and accurate
                         </label>
                                     </div>
                                 </div>
@@ -846,7 +846,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                <input type="checkbox" required id="legal_guardian_for_children_listed" />&nbsp  I am the legal guardian of the children identified above.
+                                <input type="checkbox" id="legal_guardian_for_children_listed" name="checkbox2" value="check"/>&nbsp  I am the legal guardian of the children identified above.
                             </label>
                                     </div>
                                 </div>
@@ -859,7 +859,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                    <input type="checkbox" required id="give_permission" />&nbsp  I give the Coastal Kids Dental & Braces permission to take photos of my child for medical records.
+                                    <input type="checkbox" id="give_permission" name="checkbox3" value="check"/>&nbsp  I give the Coastal Kids Dental & Braces permission to take photos of my child for medical records.
                                 </label>
                                     </div>
                                 </div>
@@ -872,7 +872,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                        <input type="checkbox" required id="understand" />&nbsp  I have read and understand the <a href ="/Privacy-Act-Document.pdf" target="_blank"> Privacy Act Document. </a>
+                                        <input type="checkbox" id="understand" name="checkbox4" value="check"/>&nbsp  I have read and understand the <a href ="/Privacy-Act-Document.pdf" target="_blank"> Privacy Act Document. </a>
                                     </label>
                                     </div>
                                 </div>
@@ -885,7 +885,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" id="understand_office" name="checkbox1" value="check" />&nbsp  I have read and understand <a href ="/Coastal-Kids-Dental-Braces-Office-Policies.pdf" target="_blank"> Coastal Kids Dental & Braces Office Polices</a>.
+                                            <input type="checkbox" id="understand_office" name="checkbox5" value="check" />&nbsp  I have read and understand <a href ="/Coastal-Kids-Dental-Braces-Office-Policies.pdf" target="_blank"> Coastal Kids Dental & Braces Office Polices</a>.
                                         </label>
                                     </div>
                                 </div>
@@ -898,7 +898,7 @@
                                 <div class="input-group">
                                     <div class="checkbox">
                                         <label>
-                                                <input type="checkbox" required id="responsible" name="checkbox" value="check"  />&nbsp I will be responsible for any fees not covered by my insurance. <a href ="/How-Insurance-Works.pdf" target="_blank"> How insurance works</a>.
+                                                <input type="checkbox" id="responsible" name="checkbox6" value="check"  />&nbsp I will be responsible for any fees not covered by my insurance. <a href ="/How-Insurance-Works.pdf" target="_blank"> How insurance works</a>.
                                             </label>
                                     </div>
                                 </div>
@@ -944,7 +944,7 @@
                     <div class="form-group">
                         <div class="col-md-12">
                             <div class="contact-row">
-                                <input class="submit btn btn-warning" style="height:35px; width:200px" type="submit" value="Send" onclick="if(!this.form.checkbox.checked) {alert('Please read and approve each statement to continue.');return true}" />
+                                <input class="btn btn-warning" style="height:35px; width:200px" type="submit" value="Send" onclick="if(!this.form.checkbox1.checked || !this.form.checkbox2.checked || !this.form.checkbox3.checked || !this.form.checkbox4.checked || !this.form.checkbox5.checked || !this.form.checkbox6.checked) {alert('Please read and approve each statement to continue.');return false}"/>
                             </div>
                         </div>
                     </div>

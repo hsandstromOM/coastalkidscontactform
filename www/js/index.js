@@ -769,14 +769,15 @@ var $contactForm = $('#contact_form');
            dataType:"json",
             });
           //  e.preventDefault();
-                  $(this).get(0).reset();
+
                   $('.submit-success').fadeToggle(400);
                   $('.submit-fail, .submit-success').click(function() {
                      $(this).hide();
                    });
                   setTimeout(function(data) {
                			window.location.href = "http://www.coastalkidsdental.com";
-                  }, 1200);
+                  }, 5000);
+                    $(this).get(400).reset();
      });
   });
 // the end
