@@ -770,7 +770,7 @@ var $contactForm = $('#contact_form');
 	  var defaultSubmitText = $submit.val();
        e.preventDefault();
        $.ajax({
-           url:'//formspree.io/hosea@obviouslee.com',
+           url:'//formspree.io/websitecontact@coastalkidsdental.com',
            method:'POST',
            data: $(this).serialize(),
            dataType:"json",
