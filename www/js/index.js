@@ -755,6 +755,13 @@ var $contactForm = $('#contact_form');
                                                                                  $('.submit-fail').fadeToggle(400);
                                                                                  return false;
                                                                                }
+                                                                               var insChoose= $('#insChoose')
+
+
+                                                                                    if(insChoose.val() == "") {
+                                                                                      $('.submit-fail').fadeToggle( "slow", "linear" );
+                                                                                      return false;
+                                                                                    }
 
 
 
@@ -771,9 +778,7 @@ var $contactForm = $('#contact_form');
           //  e.preventDefault();
 
                   $('.submit-success').fadeToggle(400);
-                  $('.submit-fail, .submit-success').click(function() {
-                     $(this).hide();
-                   });
+                  $('.submit-fail').fadeToggle(0);
                   setTimeout(function(data) {
                			window.location.href = "http://www.coastalkidsdental.com";
                   }, 5000);
