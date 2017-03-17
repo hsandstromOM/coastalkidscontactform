@@ -13,9 +13,6 @@ app.get('/', function(req,res){
   res.sendfile('www/newForm.html');
 });
 
-app.get('/insurance', function(req,res){
-  res.sendfile('www/patientIns.html');
-});
 
 app.get('*', ecstatic('www'));
 
