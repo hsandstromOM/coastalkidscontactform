@@ -770,7 +770,7 @@ var $contactForm = $('#contact_form');
 	  var defaultSubmitText = $submit.val();
        e.preventDefault();
        $.ajax({
-           url:'//coastal-kids-form.herokuapp.com/hosea@obviouslee.com',
+           url:'//formspree.io/hosea@obviouslee.com',
            method:'POST',
            data: $(this).serialize(),
            dataType:"json",
